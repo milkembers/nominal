@@ -2,9 +2,6 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - 'clients/**'
-      - 'assets/**'
 
 jobs:
   build_css:
