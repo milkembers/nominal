@@ -72,9 +72,6 @@ nav [aria-label="User Settings"] div[class^="info-"] > span:last-child::after {
 .theme-light .withFrame-haYltI {
     background: linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 20%)),var(--bg-overlay-4,var(--background-secondary));
 }
-[customTitlebar] .base-2jDfDU {
-    border-top-left-radius: 0 !important;
-}
 
 [href="/store"],
 [aria-label="Send a gift"],
