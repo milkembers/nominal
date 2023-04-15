@@ -86,6 +86,8 @@ nav [aria-label="User Settings"] div[class^="info-"] > span:last-child::after {
 [class^="characterCount-"] [class*="upsell-"], 
 [class^="emojiSection-"] [class*="shinyButton-"],
 [class*="tryItOutSection-"],
+[aria-label="Add Super Reaction"],
+[id="message-add-reaction-1"],
 [aria-label="Help"],
 [aria-label="Show User Profile (Unavailable)"],
 [aria-label="Hide User Profile"],
