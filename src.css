@@ -60,10 +60,23 @@ svg[class^="slider-"] path {
   transform: scale(1);
 }
 nav [aria-label="User Settings"] div[class^="info-"] > span:last-child::after {
-  content: "\a\aNominal";
+  content: "\a\anominal. 🤍 milk";
   white-space: pre;
   color: var(--brand-experiment);
-  font: 20pt/0.4 var(--font-code);
+  font: 12pt/1 var(--font-code);
+  text-transform: lowercase;
+}
+.wordmark-2u86JB path {
+  display: none !important;
+}
+.wordmark-2u86JB::before {
+  content: "x";
+  font: 9pt/1.2 var(--font-headline);
+  text-transform: lowercase;
+  backdrop-filter: blur(0.5em);
+  border-radius: 0.5em;
+  padding: 1px 2px 1px 2px;
+  position: fixed;
 }
 .theme-dark .withFrame-haYltI {
   background: linear-gradient(rgb(117 117 117 / 10%), rgb(117 117 117 / 10%)),
@@ -74,23 +87,24 @@ nav [aria-label="User Settings"] div[class^="info-"] > span:last-child::after {
     var(--bg-overlay-4, var(--background-secondary));
 }
 [href="/store"],
-[aria-label="Send a gift"],
-.container-2giAcK,
-.buttonContainer-1sjtPU,
-[aria-label="Nitro"],
+[class^="nowPlayingColumn-"],
 [class^="upsellVisible-"],
 [class^="premiumIconWrapper"],
 [class^="characterCount-"] [class*="upsell-"],
 [class^="emojiSection-"] [class*="shinyButton-"],
 [class*="tryItOutSection-"],
-[aria-label="Add Super Reaction"],
-[id="message-add-reaction-1"],
+[aria-label="Send a gift"],
+[aria-label="Nitro"],
 [aria-label="Help"],
 [aria-label="Show User Profile (Unavailable)"],
 [aria-label="Hide User Profile"],
 [aria-label="Show User Profile"],
-[class^="nowPlayingColumn-"],
-aside {
+[aria-label="Explore Public Servers"],
+[aria-label="Add Super Reaction"],
+[id="message-add-reaction-1"],
+.tutorialContainer-2jwoiB + div,
+.container-2giAcK,
+.buttonContainer-1sjtPU {
   display: none;
 }
 [role="listitem"] {
