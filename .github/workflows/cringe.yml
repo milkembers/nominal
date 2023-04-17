@@ -1,12 +1,12 @@
-name: thingy
+name: cringe
 
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
-  build_css:
+  cssminify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
