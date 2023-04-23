@@ -3,10 +3,10 @@
 
 @import "{{ site.theme }}";
 .page-header {
-    color:#fff;
-    text-align:center;
-    background-color:#570039;
-    background-image:linear-gradient(120deg, #72667b, #570039);
+    color: #fff;
+    text-align: center;
+    background-color: #570039;
+    background-image: linear-gradient(165deg, #84647f, #4a041b);
 }
 .main-content h1,
 .main-content h2,
@@ -14,8 +14,21 @@
 .main-content h4,
 .main-content h5,
 .main-content h6 {
-    margin-top:2rem;
-    margin-bottom:1rem;
-    font-weight:bold;
-    color:#6f228a;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #8e1e63;
+}
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,system-ui;
+}
+code, pre {
+    font-family: "Iosevka Web","Iosevka",monospace !important;
+}
+.project-name {
+    font-family: "Iosevka Web","Iosevka",monospace;
+    text-transform: capitalize;
+}
+.site-footer {
+    text-align: center;
 }
