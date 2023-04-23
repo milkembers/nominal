@@ -106,8 +106,8 @@ aside {
     display: none;
 }
 [class*="clickableSticker"] > div[aria-label]::after {
-    content: "A sticker was hidden.";
-    color: rgba(128, 128, 128, 0.75);
+    content: "見て見て!! I'm stupid!";
+    color: rgb(128 128 128 / 50%);
     font-weight: 500;
 }
 
@@ -136,9 +136,6 @@ ul[aria-label="Direct Messages"] li[aria-posinset="1"] div[class^="avatar"] {
     left: -0.25em;
     position: relative;
 }
-div[class^="searchBar-"] {
-    border: 1px solid var(--scrollbar-auto-track);
-}
 nav div[class^="searchBar-"] {
     border: none;
     display: none
@@ -154,7 +151,6 @@ nav div[class^="searchBar-"] {
 
 [class^="sidebar-"] section[class^="panels"] {
     margin: -1em 0.5em 0.5em 0.5em;
-    border: 1px solid var(--scrollbar-auto-track);
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
     padding: 0.2em;
     background: var(--bg-overlay-2,var(--background-secondary-alt));
@@ -171,7 +167,6 @@ nav div[class^="searchBar-"] {
 
 [class^="channelTextArea-"] {
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
-    border: 1px solid var(--scrollbar-auto-track);
 }
 
 [class^="nameTag-"] {
@@ -180,7 +175,6 @@ nav div[class^="searchBar-"] {
 
 [class^=menu-],[class^=submenu-] {
     border-radius: 0.5em;
-    border: 1px solid var(--scrollbar-auto-track);
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
 }
 .theme-dark [class^=menu-], .theme-dark [class^=submenu-] {
@@ -217,7 +211,6 @@ nav div[class^="searchBar-"] {
     backdrop-filter: blur(0.5em);
     border-radius: 0.5em;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--scrollbar-auto-track);
 }
 
 [class^="userPopoutOuter-"] *::after {
@@ -231,7 +224,6 @@ nav div[class^="searchBar-"] {
     z-index: 0;
     backdrop-filter: blur(0.5em);
     border-radius: 8px;
-    border: 1px solid var(--scrollbar-auto-track);
 }
 [class^="userPopoutOuter-"] [aria-label="Set Status"] {
     border: none;
@@ -246,7 +238,6 @@ nav div[class^="searchBar-"] {
     backdrop-filter: blur(0.5em);
     border-radius: 8px;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--scrollbar-auto-track);
 }
 
 .theme-light [class^=autocomplete-] {
@@ -265,7 +256,6 @@ nav div[class^="searchBar-"] {
     backdrop-filter: blur(0.75em);
     border-radius: 0.5em;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--scrollbar-auto-track);
 }
 
 [class^="positionLayer-"] ~ .theme-light[class*=layer-]>[class^=menu-] {
@@ -282,7 +272,6 @@ nav div[class^="searchBar-"] {
     backdrop-filter: blur(0.5em);
     border-radius: 0.5em;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--scrollbar-auto-track);
 }
 
 
@@ -291,14 +280,12 @@ nav div[class^="searchBar-"] {
     background: rgba(245, 245, 245, 0.7);
     backdrop-filter: blur(1em);
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--scrollbar-auto-track);
 }
 .theme-dark .container-_dQaft, .theme-dark .messagesPopoutWrap-3zryHW, .theme-dark .recentMentionsPopout-2bI1ZN, .theme-dark .container-18GwIk {
     border-radius: 0.5em;
     background: rgba(10, 10, 10, 0.7);
     backdrop-filter: blur(1em);
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--scrollbar-auto-track);
 }
 .container-1A0qQO, .container-nwU-8G, .messageContainer-3VTXBC {
     background: none;
@@ -319,7 +306,6 @@ nav div[class^="searchBar-"] {
     z-index: -1;
     border-radius: 0.5em;
     backdrop-filter: blur(1em);
-    border: 1px solid var(--scrollbar-auto-track);
 }
 
 .theme-dark .root-1CAIjD {
@@ -343,14 +329,12 @@ nav div[class^="searchBar-"] {
     backdrop-filter: blur(0.5em);
     border-radius: 0.5em;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--scrollbar-auto-track);
 }
 .theme-dark [class^=popout-], .theme-dark [class^=popoutContainer-] {
     background: rgba(10, 10, 10, 0.7);
     backdrop-filter: blur(0.5em);
     border-radius: 0.5em;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--scrollbar-auto-track);
 }
 
 [class^="profileCardUsernameRow-"] + [aria-label="User Badges"] {
@@ -360,12 +344,10 @@ nav div[class^="searchBar-"] {
 .theme-dark [class^="accountProfileCard-"] {
     background: rgba(10, 10, 10, 0.7);
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--scrollbar-auto-track);
 }
 .theme-light [class^="accountProfileCard-"] {
     background: rgba(230, 230, 230, 0.7);
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--scrollbar-auto-track);
 }
 
 .theme-light .container-2McqkF {
@@ -373,14 +355,12 @@ nav div[class^="searchBar-"] {
     backdrop-filter: blur(0.5em);
     border-radius: 0.5em;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--scrollbar-auto-track);
 }
 .theme-dark .container-2McqkF {
     background: rgba(10, 10, 10, 0.7);
     backdrop-filter: blur(0.5em);
     border-radius: 0.5em;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--scrollbar-auto-track);
 }
 
 .theme-light [class^="quickswitcher-"] {
@@ -388,14 +368,12 @@ nav div[class^="searchBar-"] {
     backdrop-filter: blur(0.5em);
     border-radius: 0.5em;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--scrollbar-auto-track);
 }
 .theme-dark [class^="quickswitcher-"] {
     background: rgba(27, 27, 27, 0.7);
     backdrop-filter: blur(0.5em);
     border-radius: 0.5em;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--scrollbar-auto-track);
 }
 [class^="quickswitcher-"]>[class^="scroller-"] {
     background: none;
@@ -410,12 +388,10 @@ nav div[class^="searchBar-"] {
     border-radius: 0.5em;
     backdrop-filter: blur(0.5em);
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2) !important;
-    border: 1px solid var(--scrollbar-auto-track);
 }
 .theme-light [aria-label="Message Actions"] > [class^="wrapper-"] {
     background: rgba(245, 245, 245, 0.6);
     border-radius: 0.5em;
     backdrop-filter: blur(0.5em);
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2) !important;
-    border: 1px solid var(--scrollbar-auto-track);
 }
