@@ -27,6 +27,6 @@ Feel free to [open issues](https://github.com/0yen4snafu/nominal/issues/new/choo
 
 ## Licensing
 
-This repository is [MIT licensed](https://github.com/0yen4snafu/nominal/blob/master/LICENSE)
+This repository is [MIT licensed](https://github.com/0yen4snafu/nominal/blob/master/LICENSE.md)
 
-Iosevka is available under SIL OFL and svg icon(s) are taken from Material Symbols or custom made by me
+Iosevka is available under [SIL OFL](https://github.com/be5invis/Iosevka/blob/main/LICENSE.md)
