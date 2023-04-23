@@ -94,6 +94,12 @@ aside {
     display: none
 }
 
+@supports selector(:has(*)) {
+    [class^="listItem-"]:has([aria-label="Download Apps"]),[class^="listItem-"]:has([aria-label="Explore Public Servers"]) + [class^="listItem-"]:has([class^="guildSeparator-"]) {
+        display: none;
+    }
+}
+
 [role="listitem"] {
     padding: 0;
 }
