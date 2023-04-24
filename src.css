@@ -4,10 +4,12 @@
   --font-display: -apple-system,BlinkMacSystemFont,system-ui;
   --font-headline: -apple-system,BlinkMacSystemFont,system-ui;*/
   --font-code: "Iosevka", "Iosevka Web";
-  --scrollbar-auto-thumb: rgb(234 222 224);
-  --brand-experiment: rgb(252 164 200);
-  --brand-experiment-560: rgb(204 168 175);
+  /*--scrollbar-auto-thumb: rgb(234 222 224);*/
+  --scrollbar-auto-thumb: rgb(223 195 200);
+  /*--brand-experiment: rgb(252 164 200);*/
+  --brand-experiment: rgb(214 148 160);
   --brand-experiment-500: rgb(184 122 133);
+  --brand-experiment-560: rgb(204 168 175);
   --brand-experiment-600: rgb(170 84 99);
   --selection-col: rgb(255 210 218 / 65%);
   --background-accent: rgb(236 67 90);
@@ -125,7 +127,7 @@ nav [aria-label="User Settings"] div[class^="info-"] > span:last-child::after {
   display: none;
 }
 [class*="clickableSticker"] > div[aria-label]::after {
-  content: "見て見て!! I'm stupid!";
+  content: "A sticker was hidden.";
   color: rgb(128 128 128 / 50%);
   font-weight: 500;
 }
