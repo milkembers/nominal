@@ -102,8 +102,7 @@ nav [aria-label="User Settings"] div[class^="info-"] > span:last-child::after {
 [aria-label="Add Super Reaction"],
 [id="message-add-reaction-1"],
 .tutorialContainer-2jwoiB + div,
-.container-2giAcK,
-.buttonContainer-1sjtPU {
+.container-2giAcK {
   display: none;
 }
 @supports selector(:has(*)) {
