@@ -16,17 +16,17 @@
 @import this link:
 
 ```
-https://0yen4snafu.github.io/nominal/src.min.css
+https://0yen45.github.io/nominal/src.min.css
 ```
 
-or [install with Stylus](https://0yen4snafu.github.io/nominal/clients/nominal.user.css) *(Firefox users may need to patch CSP)*
+or [install with Stylus](https://0yen45.github.io/nominal/clients/nominal.user.css) *(Firefox users may need to patch CSP)*
 
 ## Contributing
 
-Feel free to [open issues](https://github.com/0yen4snafu/nominal/issues/new/choose) and [pull requests](https://github.com/0yen4snafu/nominal/compare) with your ideas on improvement or stuff that should be fixed.  
+Feel free to [open issues](https://github.com/0yen45/nominal/issues/new/choose) and [pull requests](https://github.com/0yen45/nominal/compare) with your ideas on improvement or stuff that should be fixed.  
 
 ## Licensing
 
-This repository is [MIT licensed](https://github.com/0yen4snafu/nominal/blob/master/LICENSE.md)
+This repository is [MIT licensed](https://github.com/0yen45/nominal/blob/master/LICENSE.md)
 
 Iosevka is available under [SIL OFL](https://github.com/be5invis/Iosevka/blob/main/LICENSE.md)
