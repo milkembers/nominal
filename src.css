@@ -90,6 +90,7 @@ nav [aria-label="User Settings"] div[class^="info-"] > span:last-child::after {
 [aria-label="Hide User Profile"],
 [aria-label="Show User Profile"],
 [class^="nowPlayingColumn-"],
+[aria-label="Open sticker picker"],
 aside {
     display: none
 }
