@@ -1,0 +1,11 @@
+@-moz-document domain("discord.com") {
+    /* ==UserStyle==
+    @name         nominal
+    @description  discord theme
+    @author       0yen45
+    @namespace    https://0yen45.github.io/nominal/
+    @version      0
+    ==/UserStyle== */
+
+    @import url('https://0yen45.github.io/nominal/src.min.css');
+}
