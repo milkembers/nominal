@@ -7,7 +7,7 @@
     --font-code: 'Iosevka','Iosevka Web';
 
     --scrollbar-auto-thumb: rgb(234 222 224);
-    --brand-experiment: rgb(231 55 82);
+    --brand-experiment: rgb(229 156 185);
     --brand-experiment-500: rgb(184 122 133);
     --brand-experiment-560: rgb(204 168 175);
     --brand-experiment-600: rgb(170 84 99);
@@ -38,7 +38,7 @@
     background: linear-gradient(rgb(63 55 78 / 32%),rgb(169 76 76 / 27%)),var(--bg-overlay-4,var(--background-secondary)) !important;
 }
 .theme-dark .wrapper-1_HaEi,.theme-dark .scroller-3X7KbA {
-    background: linear-gradient(rgb(104 96 119 / 50%),rgb(156 108 108 / 19%)),var(--bg-overlay-4,var(--background-secondary)) !important;
+    background: linear-gradient(rgb(104 85 101 / 50%),rgb(156 108 108 / 19%)),var(--bg-overlay-4,var(--background-secondary)) !important;
 }
 
 [role="navigation"] {
@@ -130,20 +130,6 @@ svg[class^="homeIcon"] {
     background-color: inherit;
 }
 
-ul[aria-label="Direct Messages"] li[aria-posinset="1"]>div {
-    height: 2em;
-    padding: 0;
-}
-ul[aria-label="Direct Messages"] li[aria-posinset="1"] div[class^="content"] {
-    margin-right: auto;
-    max-width: fit-content;
-}
-ul[aria-label="Direct Messages"] li[aria-posinset="1"] div[class^="avatar"] {
-    margin-left: auto;
-    margin-right: 0.25em;
-    left: -0.25em;
-    position: relative;
-}
 nav div[class^="searchBar-"] {
     border: none;
     display: none
