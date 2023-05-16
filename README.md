@@ -16,7 +16,7 @@
 @import this link:
 
 ```
-https://0yen45.github.io/nominal/src.min.css
+https://0yen45.github.io/nominal/src.css
 ```
 
 or [install with Stylus](https://0yen45.github.io/nominal/clients/nominal.user.css) *(Firefox users may need to patch CSP)*
