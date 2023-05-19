@@ -1,12 +1,11 @@
 @import "https://pvinis.github.io/iosevka-webfont/7.0.2/iosevka.css";
 :root {
-  /*--font-primary: -apple-system,BlinkMacSystemFont,system-ui;
+  --font-primary: -apple-system,BlinkMacSystemFont,system-ui;
   --font-display: -apple-system,BlinkMacSystemFont,system-ui;
-  --font-headline: -apple-system,BlinkMacSystemFont,system-ui;*/
+  --font-headline: -apple-system,BlinkMacSystemFont,system-ui;
   --font-code: "Iosevka", "Iosevka Web";
-  --scrollbar-auto-thumb: rgb(234 222 224 / 20%);
-  --brand-experiment: rgb(214 148 160);
-  /*204 165 172, 214 148 160, 252 164 200, 231 55 82*/
+  --scrollbar-auto-thumb: rgb(234 222 224);
+  --brand-experiment: rgb(229 156 185);
   --brand-experiment-500: rgb(184 122 133);
   --brand-experiment-560: rgb(204 168 175);
   --brand-experiment-600: rgb(170 84 99);
@@ -41,7 +40,7 @@
 }
 .theme-dark .wrapper-1_HaEi,
 .theme-dark .scroller-3X7KbA {
-  background: linear-gradient(rgb(104 96 119 / 50%), rgb(156 108 108 / 19%)),
+  background: linear-gradient(rgb(104 85 101 / 50%), rgb(156 108 108 / 19%)),
     var(--bg-overlay-4, var(--background-secondary)) !important;
 }
 [role="navigation"] {
@@ -60,23 +59,10 @@ svg[class^="slider-"] path {
   border-radius: 100%;
 }
 nav [aria-label="User Settings"] div[class^="info-"] > span:last-child::after {
-  content: "\a\anominal. 🤍 milk";
+  content: "\a\aNominal";
   white-space: pre;
   color: var(--brand-experiment);
-  font: 12pt/1 var(--font-code);
-  text-transform: lowercase;
-}
-.wordmark-2u86JB path {
-  display: none !important;
-}
-.wordmark-2u86JB::before {
-  content: "x";
-  font: 9pt/1.2 var(--font-headline);
-  text-transform: lowercase;
-  backdrop-filter: blur(0.5em);
-  border-radius: 0.5em;
-  padding: 1px 2px 1px 2px;
-  position: fixed;
+  font: 20pt/0.4 var(--font-code);
 }
 .theme-dark .withFrame-haYltI {
   background: linear-gradient(rgb(117 117 117 / 10%), rgb(117 117 117 / 10%)),
@@ -87,22 +73,25 @@ nav [aria-label="User Settings"] div[class^="info-"] > span:last-child::after {
     var(--bg-overlay-4, var(--background-secondary));
 }
 [href="/store"],
-[class^="nowPlayingColumn-"],
+[aria-label="Send a gift"],
+.container-2giAcK,
+.buttonContainer-1sjtPU,
+[aria-label="Nitro"],
 [class^="upsellVisible-"],
 [class^="premiumIconWrapper"],
 [class^="characterCount-"] [class*="upsell-"],
 [class^="emojiSection-"] [class*="shinyButton-"],
 [class*="tryItOutSection-"],
-[aria-label="Send a gift"],
-[aria-label="Nitro"],
+[aria-label="Add Super Reaction"],
+[id="message-add-reaction-1"],
 [aria-label="Help"],
 [aria-label="Show User Profile (Unavailable)"],
 [aria-label="Hide User Profile"],
 [aria-label="Show User Profile"],
-[aria-label="Add Super Reaction"],
-[id="message-add-reaction-1"],
-.tutorialContainer-2jwoiB + div,
-.container-2giAcK {
+[class^="nowPlayingColumn-"],
+[aria-label="Open sticker picker"],
+[aria-label="Open GIF picker"],
+aside {
   display: none;
 }
 @supports selector(:has(*)) {
@@ -125,7 +114,7 @@ nav [aria-label="User Settings"] div[class^="info-"] > span:last-child::after {
   display: none;
 }
 [class*="clickableSticker"] > div[aria-label]::after {
-  content: "A sticker was hidden.";
+  content: "見て見て!! I'm stupid!";
   color: rgb(128 128 128 / 50%);
   font-weight: 500;
 }
@@ -139,20 +128,6 @@ svg[class^="homeIcon"] {
 }
 .theme-dark [class^="perksModal"] {
   background-color: inherit;
-}
-ul[aria-label="Direct Messages"] li[aria-posinset="1"] > div {
-  height: 2em;
-  padding: 0;
-}
-ul[aria-label="Direct Messages"] li[aria-posinset="1"] div[class^="content"] {
-  margin-right: auto;
-  max-width: fit-content;
-}
-ul[aria-label="Direct Messages"] li[aria-posinset="1"] div[class^="avatar"] {
-  margin-left: auto;
-  margin-right: 0.25em;
-  left: -0.25em;
-  position: relative;
 }
 nav div[class^="searchBar-"] {
   border: none;
@@ -195,11 +170,11 @@ nav div[class^="searchBar-"] {
 }
 .theme-dark [class^="menu-"],
 .theme-dark [class^="submenu-"] {
-  background: rgb(10 10 10 / 70%);
+  background: rgba(10, 10, 10, 0.7);
 }
 .theme-light [class^="menu-"],
 .theme-light [class^="submenu-"] {
-  background: rgb(255 255 255 / 70%);
+  background: rgba(255, 255, 255, 0.7);
 }
 [class^="submenu-"] {
   margin: 0 -8px;
@@ -257,11 +232,11 @@ nav div[class^="searchBar-"] {
   border-radius: 8px;
 }
 .theme-light [class^="autocomplete-"] {
-  background: rgb(255 255 255 / 70%);
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 0.5em;
 }
 .theme-dark [class^="autocomplete-"] {
-  background: rgb(10 10 10 / 70%);
+  background: rgba(10, 10, 10, 0.7);
   border-radius: 0.5em;
 }
 [class^="autocomplete-"]::before {
@@ -273,10 +248,10 @@ nav div[class^="searchBar-"] {
   border-radius: 0.5em;
 }
 [class^="positionLayer-"] ~ .theme-light[class*="layer-"] > [class^="menu-"] {
-  background: rgb(255 255 255 / 70%);
+  background: rgba(255, 255, 255, 0.7);
 }
 [class^="positionLayer-"] ~ .theme-dark[class*="layer-"] > [class^="menu-"] {
-  background: rgb(10 10 10 / 70%);
+  background: rgba(10, 10, 10, 0.7);
 }
 [class^="positionLayer-"] ~ [class*="layer-"] > [class^="menu-"]::before {
   content: "";
@@ -291,7 +266,7 @@ nav div[class^="searchBar-"] {
 .theme-light .recentMentionsPopout-2bI1ZN,
 .theme-light .container-18GwIk {
   border-radius: 0.5em;
-  background: rgb(245 245 245 / 70%);
+  background: rgba(245, 245, 245, 0.7);
   backdrop-filter: blur(1em);
 }
 .theme-dark .container-_dQaft,
@@ -299,7 +274,7 @@ nav div[class^="searchBar-"] {
 .theme-dark .recentMentionsPopout-2bI1ZN,
 .theme-dark .container-18GwIk {
   border-radius: 0.5em;
-  background: rgb(10 10 10 / 70%);
+  background: rgba(10, 10, 10, 0.7);
   backdrop-filter: blur(1em);
 }
 .container-1A0qQO,
@@ -309,11 +284,11 @@ nav div[class^="searchBar-"] {
 }
 .theme-light [class*="userProfileInnerThemedNonPremium"],
 .theme-light [class*="userProfileOuterUnthemed"] {
-  background: rgb(245 245 245 / 60%);
+  background: rgba(245, 245, 245, 0.6);
 }
 .theme-dark [class*="userProfileInnerThemedNonPremium"],
 .theme-dark [class*="userProfileOuterUnthemed"] {
-  background: rgb(25 25 25 / 40%);
+  background: rgba(25, 25, 25, 0.4);
 }
 [class*="userProfileOuterUnthemed"]::after {
   content: "";
@@ -324,12 +299,12 @@ nav div[class^="searchBar-"] {
   backdrop-filter: blur(1em);
 }
 .theme-dark .root-1CAIjD {
-  background: rgb(10 10 10 / 80%);
+  background: rgba(10, 10, 10, 0.8);
   border-radius: 0.5em;
   backdrop-filter: blur(0.5em);
 }
 .theme-light .root-1CAIjD {
-  background: rgb(245 245 245 / 80%);
+  background: rgba(245, 245, 245, 0.8);
   border-radius: 0.5em;
   backdrop-filter: blur(0.5em);
 }
@@ -338,13 +313,13 @@ nav div[class^="searchBar-"] {
 }
 .theme-light [class^="popout-"],
 .theme-light [class^="popoutContainer-"] {
-  background: rgb(255 255 255 / 70%);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(0.5em);
   border-radius: 0.5em;
 }
 .theme-dark [class^="popout-"],
 .theme-dark [class^="popoutContainer-"] {
-  background: rgb(10 10 10 / 70%);
+  background: rgba(10, 10, 10, 0.7);
   backdrop-filter: blur(0.5em);
   border-radius: 0.5em;
 }
@@ -352,28 +327,28 @@ nav div[class^="searchBar-"] {
   background: none !important;
 }
 .theme-dark [class^="accountProfileCard-"] {
-  background: rgb(10 10 10 / 70%);
+  background: rgba(10, 10, 10, 0.7);
 }
 .theme-light [class^="accountProfileCard-"] {
-  background: rgb(230 230 230 / 70%);
+  background: rgba(230, 230, 230, 0.7);
 }
 .theme-light .container-2McqkF {
-  background: rgb(245 245 245 / 70%);
+  background: rgba(245, 245, 245, 0.7);
   backdrop-filter: blur(0.5em);
   border-radius: 0.5em;
 }
 .theme-dark .container-2McqkF {
-  background: rgb(10 10 10 / 70%);
+  background: rgba(10, 10, 10, 0.7);
   backdrop-filter: blur(0.5em);
   border-radius: 0.5em;
 }
 .theme-light [class^="quickswitcher-"] {
-  background: rgb(255 255 255 / 70%);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(0.5em);
   border-radius: 0.5em;
 }
 .theme-dark [class^="quickswitcher-"] {
-  background: rgb(27 27 27 / 70%);
+  background: rgba(27, 27, 27, 0.7);
   backdrop-filter: blur(0.5em);
   border-radius: 0.5em;
 }
@@ -384,12 +359,12 @@ nav div[class^="searchBar-"] {
   backdrop-filter: blur(0.25em);
 }
 .theme-dark [aria-label="Message Actions"] > [class^="wrapper-"] {
-  background: rgb(10 10 10 / 60%);
+  background: rgba(10, 10, 10, 0.6);
   border-radius: 0.5em;
   backdrop-filter: blur(0.5em);
 }
 .theme-light [aria-label="Message Actions"] > [class^="wrapper-"] {
-  background: rgb(245 245 245 / 60%);
+  background: rgba(245, 245, 245, 0.6);
   border-radius: 0.5em;
   backdrop-filter: blur(0.5em);
 }
