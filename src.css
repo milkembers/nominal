@@ -1,9 +1,9 @@
 @import "https://pvinis.github.io/iosevka-webfont/7.0.2/iosevka.css";
 
 :root {
-    --font-primary: -apple-system,BlinkMacSystemFont,system-ui;
-    --font-display: -apple-system,BlinkMacSystemFont,system-ui;
-    --font-headline: -apple-system,BlinkMacSystemFont,system-ui;
+    --font-primary: -apple-system,system-ui;
+    --font-display: -apple-system,system-ui;
+    --font-headline: -apple-system,system-ui;
     --font-code: 'Iosevka','Iosevka Web';
 
     --scrollbar-auto-thumb: rgb(234 222 224);
@@ -73,10 +73,12 @@ nav [aria-label="User Settings"] div[class^="info-"] > span:last-child::after {
     background: linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 20%)),var(--bg-overlay-4,var(--background-secondary));
 }
 
+main [class*="scroller"] {
+    scrollbar-color: var(--scrollbar-auto-thumb) var(--background-primary);
+}
+
 [href="/store"],
 [aria-label="Send a gift"],
-.container-2giAcK,
-.buttonContainer-1sjtPU,
 [aria-label="Nitro"],
 [class^="upsellVisible-"], 
 [class^="premiumIconWrapper"], 
@@ -84,15 +86,9 @@ nav [aria-label="User Settings"] div[class^="info-"] > span:last-child::after {
 [class^="emojiSection-"] [class*="shinyButton-"],
 [class*="tryItOutSection-"],
 [aria-label="Add Super Reaction"],
-[id="message-add-reaction-1"],
 [aria-label="Help"],
-[aria-label="Show User Profile (Unavailable)"],
-[aria-label="Hide User Profile"],
-[aria-label="Show User Profile"],
-[class^="nowPlayingColumn-"],
 [aria-label="Open sticker picker"],
-[aria-label="Open GIF picker"],
-aside {
+[aria-label="Open GIF picker"] {
     display: none
 }
 
