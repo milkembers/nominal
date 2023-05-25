@@ -1,8 +1,8 @@
 @import "https://pvinis.github.io/iosevka-webfont/7.0.2/iosevka.css";
 :root {
-  /*--font-primary: -apple-system,BlinkMacSystemFont,system-ui;
-  --font-display: -apple-system,BlinkMacSystemFont,system-ui;
-  --font-headline: -apple-system,BlinkMacSystemFont,system-ui;*/
+  /*--font-primary: -apple-system,system-ui;
+  --font-display: -apple-system,system-ui;
+  --font-headline: -apple-system,system-ui;*/
   --font-code: "Iosevka", "Iosevka Web";
   --scrollbar-auto-thumb: rgb(234 222 224 / 20%);
   --brand-experiment: rgb(214 148 160);
