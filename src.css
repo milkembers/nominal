@@ -1,10 +1,7 @@
 @import "https://pvinis.github.io/iosevka-webfont/7.0.2/iosevka.css";
 
 :root {
-    --font-primary: -apple-system,system-ui;
-    --font-display: -apple-system,system-ui;
-    --font-headline: -apple-system,system-ui;
-    --font-code: 'Iosevka','Iosevka Web';
+    --font-code: Iosevka,"Iosevka","Iosevka Web","Andale Mono WT","Andale Mono","DejaVu Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,monospace;
 
     --scrollbar-auto-thumb: rgb(234 222 224);
     --brand-experiment: rgb(229 156 185);
