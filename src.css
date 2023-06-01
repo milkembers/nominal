@@ -1,8 +1,4 @@
-@import "https://pvinis.github.io/iosevka-webfont/7.0.2/iosevka.css";
-
 :root {
-    --font-code: Iosevka,"Iosevka","Iosevka Web","Andale Mono WT","Andale Mono","DejaVu Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,monospace;
-
     --scrollbar-auto-thumb: rgb(234 222 224);
     --brand-experiment: rgb(229 156 185);
     --brand-experiment-500: rgb(184 122 133);
@@ -83,9 +79,7 @@ main [class*="scroller"] {
 [class^="emojiSection-"] [class*="shinyButton-"],
 [class*="tryItOutSection-"],
 [aria-label="Add Super Reaction"],
-[aria-label="Help"],
-[aria-label="Open sticker picker"],
-[aria-label="Open GIF picker"] {
+[aria-label="Help"] {
     display: none
 }
 

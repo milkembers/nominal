@@ -1,11 +1,11 @@
 @-moz-document domain("discord.com") {
     /* ==UserStyle==
-    @name         Nominal
-    @description  Makes discord's shitty interface that much more bearable to look at.
-    @author       0yen45
-    @namespace    https://0yen45.github.io/nominal/
+    @name         NOMINAL
+    @description  makes discord's shitty interface that much more bearable to look at.
+    @author       nvkomimi
+    @namespace    https://nvkomimi.github.io/nominal/
     @version      1
     ==/UserStyle== */
 
-    @import url('https://0yen45.github.io/nominal/src.css');
+    @import url('https://nvkomimi.github.io/nominal/src.css');
 }
