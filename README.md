@@ -27,4 +27,4 @@ Feel free to [open issues](https://github.com/nvkomimi/nominal/issues/new/choose
 
 ## Licensing
 
-[MIT](https://github.com/nvkomimi/nominal/blob/master/LICENSE.md)
+[MIT](https://github.com/nvkomimi/nominal/blob/master/LICENSE)
