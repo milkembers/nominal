@@ -93,7 +93,9 @@ main [class*="scroller"] {
 [class^="emojiSection-"] [class*="shinyButton-"],
 [class*="tryItOutSection-"],
 [aria-label="Add Super Reaction"],
-[aria-label="Help"] {
+[aria-label="Help"],
+[aria-label^="Explore"],
+.tutorialContainer-2jwoiB + div {
   display: none;
 }
 @supports selector(:has(*)) {
