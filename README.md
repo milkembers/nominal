@@ -1,17 +1,23 @@
-![](https://user-images.githubusercontent.com/76652465/230675400-9deacd45-4604-4ab3-8265-6460d7a5cd83.png)
+<h1 align="center"><img src="https://github.com/nvkomimi/nominal/assets/76652465/aa417518-22d3-4654-8fb1-9cd6c88cd570"></h1>
 
-![](https://user-images.githubusercontent.com/76652465/227583407-c29784ac-540d-4ee0-a3bd-eee6c32d51fb.png)
+![mainpreview](https://github.com/nvkomimi/nominal/assets/76652465/4b2b3bc3-9425-4893-8aea-1de29fdbb190)
+![nitrocolourpreview](https://github.com/nvkomimi/nominal/assets/76652465/9f4ba6a9-5137-4af3-af62-e2c3669f4794)
+
+## Why?
+
+Nominal tweaks discord in way to stay close to the original, be quickly adaptive to changes and mainly improve the design at least a little bit.
+
+It's basically simple eye-candy for an ugly app.
 
 ## Features
 
 - Nitro Colour Themes support
-- Iosevka font for code blocks
 - Cute accent colours for checkboxes and selections
-- Better Dark and Light theme
+- AMOLED-like Dark theme, better Light theme
 - Removes most Nitro promos, useless stuff and hides welcome stickers
 - Blurred context menus and backdrops
 
-## How to use
+## Usage
 
 @import this link:
 
