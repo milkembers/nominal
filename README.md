@@ -1,7 +1,7 @@
 <h1 align="center"><img src="https://github.com/nvkomimi/nominal/assets/76652465/aa417518-22d3-4654-8fb1-9cd6c88cd570"></h1>
 
-![mainpreview](https://github.com/nvkomimi/nominal/assets/76652465/4b2b3bc3-9425-4893-8aea-1de29fdbb190)
-![nitrocolourpreview](https://github.com/nvkomimi/nominal/assets/76652465/9f4ba6a9-5137-4af3-af62-e2c3669f4794)
+![mainpreview](assets/mainpreview.png)
+![nitrocolourpreview](assets/nitrocolourpreview.png)
 
 ## Why?
 
@@ -23,7 +23,7 @@ It's basically simple eye-candy for an ugly app.
 
     https://nvkomimi.github.io/nominal/src.css
 
-or [install with Stylus](https://nvkomimi.github.io/nominal/clients/nominal.user.css)
+or [install with Stylus](clients/nominal.user.css)
 
 ## Contributing
 
