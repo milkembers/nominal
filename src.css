@@ -53,10 +53,17 @@ svg[class^="slider-"] path {
 }
 
 nav [aria-label="User Settings"] div[class^="info-"] > span:last-child::after {
-    content: "\a\aNominal";
+    content: "\a\a\aNominal";
     white-space: pre;
     color: var(--brand-experiment);
     font: 20pt/0.4 var(--font-code);
+}
+nav [aria-label="User Settings"] div[class^="info-"]::after {
+    content: "by nvkomimi | MIT licensed";
+    white-space: pre;
+    font: 8pt/0.4 var(--font-code);
+    color: var(--text-muted);
+    text-transform: none;
 }
 
 .theme-dark .withFrame-haYltI {
@@ -86,6 +93,9 @@ main [class*="scroller"] {
 @supports selector(:has(*)) {
     [class^="listItem-"]:has([aria-label="Download Apps"]),
     [class^="listItem-"]:has([aria-label^="Explore"]) + [class^="listItem-"]:has([class^="guildSeparator-"]) {
+        display: none;
+    }
+    li:has([href="/activities"]) {
         display: none;
     }
 }
@@ -140,17 +150,19 @@ nav div[class^="searchBar-"] {
 .theme-light [class^="sidebar-"] section[class^="panels"] {
     background: var(--bg-overlay-3,var(--background-tertiary));
 }
+[class^="sidebar-"] {
+    width: 220px;
+}
 [class^="sidebar-"] section[class^="panels"] {
     margin: -1em 0.5em 0.5em 0.5em;
     padding: 0.2em;
-    max-width: 217px;
     border-radius: 0.75em;
 }
 [class^="sidebar-"] section[class^="panels"] div[class^="container-"] {
     background: none;
 }
 [class^="sidebar-"] section[class^="panels"] [class^="avatarWrapper-"] {
-    min-width: 105px;
+    min-width: 87px;
     margin-right: 2px;
 }
 
