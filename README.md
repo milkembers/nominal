@@ -11,9 +11,9 @@ It's basically simple eye-candy for an ugly app.
 
 ## Features
 
-- Nitro Colour Themes support
+- Nitro Colour Theme friendly
 - Cute accent colours for checkboxes and selections
-- AMOLED-like Dark theme, better Light theme
+- AMOLED-like Dark theme & various improvements
 - Removes most Nitro promos, useless stuff and hides welcome stickers
 - Blurred context menus and backdrops
 
