@@ -19,4 +19,4 @@
 https://milkembers.github.io/nominal/src.min.css
 ```
 
-or [install with stylus](clients/nominal.user.css)
+or [install with stylus](https://milkembers.github.io/clients/nominal.user.css)
