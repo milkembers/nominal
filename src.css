@@ -59,6 +59,7 @@ nav [aria-label="User Settings"] div[class^="info-"] > span:last-child::after {
   white-space: pre;
   color: var(--brand-experiment);
   font: 20pt/0.4 var(--font-code);
+  text-transform: none;
 }
 nav [aria-label="User Settings"] div[class^="info-"]::after {
   content: "by nvkomimi | MIT licensed";
@@ -73,7 +74,7 @@ nav [aria-label="User Settings"] div[class^="info-"]::after {
 .wordmark-2u86JB::before {
   content: "x";
   font: 9pt/1.2 var(--font-headline);
-  text-transform: lowercase;
+  text-transform: none;
   backdrop-filter: blur(0.5em);
   border-radius: 0.5em;
   padding: 1px 2px 1px 2px;
