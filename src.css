@@ -59,7 +59,7 @@ nav [aria-label="User Settings"] div[class^="info-"] > span:last-child::after {
   white-space: pre;
   color: var(--brand-experiment);
   font: 20pt/0.4 var(--font-code);
-  text-transform: none;
+  text-transform: lowercase;
 }
 nav [aria-label="User Settings"] div[class^="info-"]::after {
   content: "by nvkomimi | MIT licensed";
