@@ -13,7 +13,6 @@ It's basically simple eye-candy for an ugly app.
 
 - Nitro Colour Theme friendly
 - Cute accent colours for checkboxes and selections
-- AMOLED-like Dark theme & various improvements
 - Removes most Nitro promos, useless stuff and hides welcome stickers
 - Blurred context menus and backdrops
 
@@ -24,6 +23,23 @@ It's basically simple eye-candy for an ugly app.
     https://nvkomimi.github.io/nominal/src.css
 
 or [install with Stylus](clients/nominal.user.css)
+
+## Personalization
+
+Change the colours by using this in your quick css!
+
+    /* a very dark theme */
+    .theme-dark {
+        --background-primary: rgb(0 0 0);
+        --background-secondary: rgb(20 20 21);
+        --background-secondary-alt: rgb(10 10 11);
+        --background-tertiary: rgb(21 21 22);
+        --background-floating: rgb(8 8 9);
+        --channeltextarea-background: rgb(16 16 17);
+        --modal-footer-background: rgb(24 24 25);
+        --modal-background: rgb(15 15 16 / 75%);
+        --home-background: var(--background-primary);
+    }
 
 ## Contributing
 
