@@ -1,13 +1,11 @@
-/* ==UserStyle==
-@name           nominal
-@namespace      github.com/milkembers/nominal
-@version        1
-@description    makes discord's shitty interface that much more bearable to look at
-@author         nvkomimi
-@updateURL      https://milkembers.github.io/DIM-milk/DIM-milk.user.css
-@preprocessor   stylus
-==/UserStyle== */
-
 @-moz-document domain("discord.com") {
-  @import url("https://milkembers.github.io/nominal/src.css");
+    /* ==UserStyle==
+    @name         NOMINAL
+    @description  makes discord's shitty interface that much more bearable to look at.
+    @author       nvkomimi
+    @namespace    https://nvkomimi.github.io/nominal/
+    @version      1
+    ==/UserStyle== */
+
+    @import url('https://nvkomimi.github.io/nominal/src.css');
 }
