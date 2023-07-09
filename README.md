@@ -1,6 +1,8 @@
 ## Nominal
 
+
 Nominal tweaks Discord in a way that stays close to the original, is quickly adaptive to changes, and mainly, improves the design - at least a little bit.
+
 
 ![mainpreview](assets/mainpreview.png)
 ![nitrocolourpreview](assets/nitrocolourpreview.png)
