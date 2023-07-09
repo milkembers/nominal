@@ -1,6 +1,6 @@
 # 🌸 nominal
 
-> a theme that stays close to the original, is quickly adaptive to changes, and improves the design - at least a little bit.
+> a theme that stays close to the original, is adaptive to changes, and improves the design - at least a little bit.
 
 ![mainpreview](assets/mainpreview.png)
 ![nitrocolourpreview](assets/nitrocolourpreview.png)
