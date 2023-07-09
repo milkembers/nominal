@@ -1,6 +1,6 @@
 ## 🌸 nominal
 
-a Discord theme that stays close to the original, is quickly adaptive to changes, and improves the design - at least a little bit.
+# a Discord theme that stays close to the original, is quickly adaptive to changes, and improves the design - at least a little bit.
 
 ![mainpreview](assets/mainpreview.png)
 ![nitrocolourpreview](assets/nitrocolourpreview.png)
@@ -20,7 +20,7 @@ a Discord theme that stays close to the original, is quickly adaptive to changes
 https://milkembers.github.io/nominal/src.min.css
 ```
 
-or (for web) [install with Stylus](nominal.user.css)
+for use in the browser, [install with Stylus](nominal.user.css)
 
 ## 🗝️ licensing
 
