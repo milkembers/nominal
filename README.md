@@ -1,25 +1,27 @@
-<h1 align="center"><img src="https://github.com/nvkomimi/nominal/assets/76652465/aa417518-22d3-4654-8fb1-9cd6c88cd570"></h1>
+## Nominal
+
+Nominal tweaks Discord in a way that stays close to the original, is quickly adaptive to changes, and mainly, improves the design - at least a little bit.
 
 ![mainpreview](assets/mainpreview.png)
 ![nitrocolourpreview](assets/nitrocolourpreview.png)
 
-## features
+## Features
 
-- nitro colour theme friendly
-- cute accent colours for checkboxes and selections
-- removes most nitro promos, useless stuff and hides welcome stickers
-- blurred context menus and backdrops
+- Nitro Colour Theme friendly
+- Cute accent colours for checkboxes and selections
+- Removes most Nitro promos, useless stuff and hides welcome stickers
+- Blurred context menus and backdrops
 
-## usage
+## Usage
 
-@import this link:
+@import this link or paste it in your Vencord Themes tab:
 
 ```
 https://milkembers.github.io/nominal/src.min.css
 ```
 
-or [install with stylus](clients/nominal.user.css)
+or (for web) [install with Stylus](nominal.user.css)
 
-## licensing
+## Licensing
 
-[MIT](LICENSE)
+[MIT](LICENSE.md)

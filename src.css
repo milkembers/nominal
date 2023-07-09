@@ -1,7 +1,7 @@
 :root {
   --scrollbar-auto-thumb: rgb(234 222 224 / 20%);
   --brand-experiment: rgb(214 148 160);
-  /*204 165 172, 214 148 160, 229 156 185*/
+  /*other colors Nominal has used for brand-experiment: 204 165 172, 214 148 160, 229 156 185*/
   --brand-experiment-500: rgb(184 122 133);
   --brand-experiment-560: rgb(204 168 175);
   --brand-experiment-600: rgb(170 84 99);
@@ -50,19 +50,6 @@ svg[class^="slider-"] path {
 }
 [class*="connectedAccountName-"] [class*="anchor"] {
   border: 2px solid var(--brand-experiment-500);
-}
-nav [aria-label="User Settings"] div[class^="info-"] > span:last-child::after {
-  content: "\a\a\aNominal";
-  white-space: pre;
-  color: var(--brand-experiment);
-  font: 20pt/0.4 var(--font-code);
-}
-nav [aria-label="User Settings"] div[class^="info-"]::after {
-  content: "by nvkomimi | MIT licensed";
-  white-space: pre;
-  font: 8pt/0.4 var(--font-code);
-  color: var(--text-muted);
-  text-transform: none;
 }
 .wordmark-2u86JB path {
   display: none !important;
@@ -125,7 +112,7 @@ main [class*="scroller"] {
   display: none;
 }
 [class*="clickableSticker"] > div[aria-label]::after {
-  content: "見て見て!! I'm stupid!";
+  content: "A sticker was hidden.";
   color: rgb(128 128 128 / 50%);
   font-weight: 500;
 }
