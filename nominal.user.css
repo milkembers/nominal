@@ -1,11 +1,10 @@
-@-moz-document domain("discord.com") {
-    /* ==UserStyle==
-    @name         nominal
-    @description  a minimal theme with a dash of cute
-    @author       nvkomimi / fork maintained by milkembers
-    @namespace    https://milkembers.github.io/nominal/
-    @version      1
-    ==/UserStyle== */
-
-    @import url('https://milkembers.github.io/nominal/src.min.css');
-}
+/* ==UserStyle==
+@name           nominal
+@namespace      github.com/milkembers/nominal
+@version        1.0.1
+@description    a minimal theme with a dash of cute
+@author         nvkomimi / fork maintained by milkembers
+@updateURL      https://milkembers.github.io/nominal/src.min.css
+@preprocessor   stylus
+==/UserStyle== */
+@-moz-document domain("discord.com"){@import url('https://milkembers.github.io/nominal/src.min.css');}

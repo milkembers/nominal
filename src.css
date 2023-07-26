@@ -1,7 +1,7 @@
 :root {
   --scrollbar-auto-thumb: rgb(234 222 224 / 20%);
   --brand-experiment: rgb(214 148 160);
-  /*colors Nominal has used for brand-experiment: 204 165 172, 214 148 160, 229 156 185*/
+  /*colors: 204 165 172, 214 148 160, 229 156 185*/
   --brand-experiment-500: rgb(184 122 133);
   --brand-experiment-560: rgb(204 168 175);
   --brand-experiment-600: rgb(170 84 99);
