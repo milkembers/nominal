@@ -7,14 +7,14 @@
 
 ## ✨ features
 
-- Nitro Colour Theme friendly
-- Cute accent colours for checkboxes and selections
-- Removes most Nitro promos and hides welcome stickers
-- Blurred context menus and backdrops
+- Nitro colour theme friendly
+- cute accent colours for checkboxes and selections
+- removes most Nitro promos and hides welcome stickers
+- blurred context menus and backdrops
 
 ## 📥 usage
 
-@import this link or paste it in your Vencord Themes tab:
+@import this link or paste it in your Vencord themes tab:
 
 ```
 https://milkembers.github.io/nominal/src.min.css
@@ -24,4 +24,4 @@ for use in the browser, [install with Stylus](nominal.user.css)
 
 ## 🗝️ licensing
 
-[MIT](LICENSE.md)
+[MIT](LICENSE)
