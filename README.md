@@ -5,7 +5,7 @@
 <p align="center">
 		<img alt="works on Firefox" src="https://img.shields.io/badge/works_on-firefox-ff8c28?style=for-the-badge&logo=Firefox-Browser&logoColor=white">
 		<img alt="works on Chrome" src="https://img.shields.io/badge/works_on-chrome-4285f4?style=for-the-badge&logo=Google-chrome&logoColor=white">
-	<a href="https://milkembers.github.io/DIM-milk/DIM-milk.user.css">
+	<a href="https://github.com/milkembers/nominal/raw/main/nominal.user.css">
 		<img alt="install directly with Stylus" src="https://img.shields.io/badge/install_directly_with-stylus-00adad?style=for-the-badge"></a>
 </p>
 
