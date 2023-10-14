@@ -74,6 +74,30 @@ svg[class^="slider-"] path {
   position: fixed;
 }
 
+.search-39IXmY .search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ {
+  width: 27px;
+  transition: 250ms;
+  background-color: transparent;
+}
+
+.search-39IXmY .search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ .iconContainer-1RqWJj {
+  transform: scale(1.3);
+  transition: 250ms;
+}
+
+.search-39IXmY .search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ .iconContainer-1RqWJj .icon-18rqoe {
+  color: var(--interactive-normal);
+}
+
+.search-39IXmY .search-2Mwzzq:not(.open-1F8u2c):hover .searchBar-jGtisZ {
+  width: 220px;
+  background-color: var(--background-tertiary);
+}
+
+.search-39IXmY .search-2Mwzzq:not(.open-1F8u2c):hover .searchBar-jGtisZ .iconContainer-1RqWJj {
+  transform: scale(1);
+}
+
 .theme-dark .withFrame-haYltI {
   background: linear-gradient(rgb(117 117 117 / 10%), rgb(117 117 117 / 10%)),
     var(--bg-overlay-4, var(--background-secondary));
