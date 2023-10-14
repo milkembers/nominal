@@ -89,8 +89,8 @@ main [class*="scroller"] {
 }
 
 [href="/store"],
+[href="/shop"],
 [aria-label="Nitro"],
-[aria-label="Shop"],
 [aria-label="Send a gift"],
 [class^="upsellVisible-"],
 [class^="premiumIconWrapper"],
