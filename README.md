@@ -10,7 +10,8 @@
 </p>
 
 <br /><p align="center">
-	a theme that stays close to the original, is adaptive to changes, and improves the design - at least a little bit.
+	a theme that stays close to the original, is adaptive to changes, and improves the design - at least a little bit.<br />
+	<sub>please note that i (milk) am not the original author (nvkomimi, etc) - i inherited this repo :')</sub>
 </p>
 
 <br /><p align="center">
