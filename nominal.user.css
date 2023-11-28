@@ -4,7 +4,7 @@
 @version        1.1.0
 @description    a minimal theme with a dash of cute
 @author         milkembers
-@updateURL      https://milkembers.github.io/nominal/nominal.min.css
+@updateURL      https://milkembers.github.io/nominal/nominal.user.css
 @preprocessor   stylus
 ==/UserStyle== */
 @-moz-document domain("discord.com"){@import url('https://milkembers.github.io/nominal/nominal.min.css');}
