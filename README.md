@@ -1,5 +1,5 @@
 <h1 align="center">
-	🌸 nominal
+	🌙🌸 nominal
 </h1>
 
 <p align="center">
@@ -10,32 +10,39 @@
 </p>
 
 <br /><p align="center">
-	a theme that stays close to the original, is adaptive to changes, and improves the design - at least a little bit.<br />
-	<sub>please note that i (milk) am not the original author (nvkomimi, etc) - i inherited this repo :')</sub>
+	a minimal, dark theme with a pop of color that hopes to improve the design - at least a little bit.<br />
 </p>
 
 <br /><p align="center">
-	<img alt="preview" src="https://milkembers.github.io/nominal/assets/mainpreview.png"><br/>
-	<img alt="preview" src="https://milkembers.github.io/nominal/assets/nitrocolourpreview.png">
+	<img alt="preview" src="https://milkembers.github.io/nominal/assets/preview.png"><br/>
 </p>
 
 ## ✨ features
 
-- Nitro colour theme friendly
 - cute accent colours for checkboxes and selections
-- removes most Nitro promos and hides welcome stickers
+- hides many small annoyances like the Nitro shop, avatar decorations and welcome stickers
 - blurred context menus and backdrops
+- <s>Nitro colour theme friendly</s> (needs a little work after the 10/23 update, not likely to fix)
 
 ## 📥 usage
+
+> [!IMPORTANT]  
+> make sure to enable dark mode in settings for the theme to apply properly!
 
 @import this link or paste it in your Vencord themes tab:
 
 ```
-https://milkembers.github.io/nominal/src.min.css
+https://milkembers.github.io/nominal/nominal.min.css
 ```
 
 for use in the browser, [install with Stylus](nominal.user.css)
 
-## 🗝️ licensing
+## ✨ credits
+
+- the beautiful [midnight theme](https://github.com/refact0r/midnight-discord) for moon icon, window controls & some misc variables
+- the lovely [catppuccin palette](https://github.com/catppuccin/catppuccin) for some text colors
+- nvkomimi, the author of the original theme that passed it onto me
+
+## 🗝️ license
 
 [MIT](LICENSE)
