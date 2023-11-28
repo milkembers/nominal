@@ -1,6 +1,6 @@
 # 🌙🌸 nominal
 
-a minimal, dark theme with a pop of color that hopes to improve the design - at least a little bit.<br />
+a minimal, dark theme with a pop of color that hopes to improve the design - at least a little bit
 
 <img alt="preview" src="https://milkembers.github.io/nominal/assets/preview.png">
 
@@ -8,24 +8,25 @@ a minimal, dark theme with a pop of color that hopes to improve the design - at 
 
 - cute accent colours for checkboxes and selections
 - blurred context menus and backdrops
-- hides many small annoyances like the nitro shop, avatar decorations and welcome stickers
-- <s>nitro colour theme friendly</s> (needs a little work after the 10/23 update, not likely to fix)
+- hides many annoyances like the nitro shop, avatar decorations and welcome stickers
+- ~~nitro colour theme friendly~~ (needs a little work after the 10/23 update, not likely to fix)
 
-## usage
+## install
 
 > [!IMPORTANT]  
 > make sure to enable dark mode in settings for the theme to apply properly!
 
 ### Vencord (or client without local theme folder)
 
-@import this link or paste it in your Vencord themes tab:
+@import this link, or paste it in your themes tab > online themes:
 
 ```
 https://milkembers.github.io/nominal/nominal.min.css
 ```
+
 ### in-browser / web app
 
-click to [install with Stylus](nominal.user.css)
+follow this link to [install with Stylus](nominal.user.css)
 
 > [!NOTE]
 > due to limitations, the Stylus theme has reduced functionality and will not hide annoyances
