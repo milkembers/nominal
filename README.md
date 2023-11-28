@@ -35,7 +35,10 @@
 https://milkembers.github.io/nominal/nominal.min.css
 ```
 
-for use in the browser, [install with Stylus](nominal.user.css)
+for use in-browser, [install with Stylus](nominal.user.css)
+
+> [!NOTE]
+> due to limitations, the theme has reduced functionality in-browser and will not hide annoyances
 
 ## ✨ credits
 
