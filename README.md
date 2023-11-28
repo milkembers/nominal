@@ -29,21 +29,25 @@
 > [!IMPORTANT]  
 > make sure to enable dark mode in settings for the theme to apply properly!
 
+### Vencord
+
 @import this link or paste it in your Vencord themes tab:
 
 ```
 https://milkembers.github.io/nominal/nominal.min.css
 ```
 
-for use in-browser, [install with Stylus](nominal.user.css)
+### web/in-browser
+
+[install with Stylus](nominal.user.css)
 
 > [!NOTE]
-> due to limitations, the theme has reduced functionality in-browser and will not hide annoyances
+> due to limitations, the web theme has reduced functionality and will not hide annoyances
 
 ## ✨ credits
 
 - the beautiful [midnight theme](https://github.com/refact0r/midnight-discord) for moon icon, window controls & some misc variables
-- the lovely [catppuccin palette](https://github.com/catppuccin/catppuccin) for some text colors
+- the lovely [catppuccin palette](https://github.com/catppuccin/catppuccin) for a few colors
 - nvkomimi, the author of the original theme that passed it onto me
 
 ## 🗝️ license
