@@ -248,11 +248,6 @@ svg[class^="slider"] path {
   border-radius: var(--roundness-l);
 }
 
-/* sidebar user panel, align soundboard icon */
-[class^="sidebar"] section[class^="panels"] [aria-label="Open Soundboard"] [class^="contents"] {
-  padding-top: 3px;
-}
-
 /* sidebar user panel, align icon trio */
 [class^="sidebar"] section[class^="panels"] [class^="avatarWrapper"] {
   min-width: 104px;
@@ -342,11 +337,13 @@ nav div[class^="searchBar"],
 [class*="sectionsContainer_a37883"]>[class*="customizationSection__16fec"]:nth-of-type(5),
 [aria-label*="Send a gift"],
 [aria-label*="Start an Activity"],
+/* "new" dot on activity button */
+[class*="dot__67e1c maskBlack__1f601"],
 div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]),
 img[class^="avatarDecoration"],
 svg[class^="avatarDecoration"],
 svg[class^="bannerSVGWrapper"]>mask,
-[class^='wordmarkWindows']>svg,
-[class^='winButton']>svg {
+[class^="wordmarkWindows"]>svg,
+[class^="winButton"]>svg {
   display: none;
 }
