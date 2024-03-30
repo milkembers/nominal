@@ -270,9 +270,14 @@ svg[class^="slider"] path {
   margin-right: 2px;
 }
 
-/* sidebar user panel, voice/video connected text */
-[class^="sidebar"] section[class^="panels"] [class*="contents__322f4"] {
+/* sidebar call, voice/video connected text */
+[class^="sidebar"] section[class^="panels"] [class^="labelWrapper"] [class*="contents__322f4"] {
   font-size: var(--roundness-l);
+}
+
+/* sidebar call, action buttons */
+[class^="sidebar"] section[class^="panels"] [class^="actionButtons"] [class*="buttonIcon"] {
+  width: 18px !important;
 }
 
 /* backdrop blur */
@@ -368,10 +373,11 @@ nav div[class^="searchBar"],
 [class*="sectionsContainer__45b62"]>[class*="customizationSection__0f57e"]:nth-of-type(5),
 /* chat gift button */
 button[aria-label*="Send a gift"],
-/* activity button */
-.buttonContainer_c84998,
-[aria-label*="Start an Activity"],
-/* "new" dot on activity button (needs fix) */
+/* activity button, call */
+[class*="buttonContainer_c84998"],
+/* activity button, sidebar */
+button[aria-label*="Start an Activity"],
+/* "new" dot on activity button (needs hash fix) */
 [class*="dot__67e1c maskBlack__1f601"],
 /* server discovery */
 div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]),
