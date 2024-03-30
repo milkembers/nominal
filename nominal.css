@@ -46,15 +46,27 @@
   --roundness-m: 10px;
   --roundness-s: 8px;
   --roundness-xs: 4px;
+  /* animations, can be disabled with reduced motion */
+  --moon-spin-transition: 0.4s ease; /* moon icon spin */
+  /* top left icon, block to show, none to hide */
+  --default-icon: none;
+  --moon-icon: block;
+  --moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg');
+  --moon-icon-size: auto;
+  /* top left text */
+	--corner-text: 'n o m i n a l';
   /* font, default is 'gg sans' */
   --font: 'figtree';
   --font-primary: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-display: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  /* top left icon, to show default, moon-icon 'none', default-icon 'block' */
-  --moon-icon: block;
-  --default-icon: none;
 }
 
+/* reduced motion */
+:root.reduce-motion {
+	--moon-spin-transition: none;
+}
+
+html.theme-light,
 .theme-dark {
   /* behind chat */
   --background-primary: var(--bg-4);
@@ -115,7 +127,7 @@
 
 /* top bar title ii */
 [class^='wordmarkWindows']::after {
-  content: 'n o m i n a l';
+  content: var(--corner-text);
   display: block;
   position: relative;
   font: 11px var(--font);
@@ -178,31 +190,35 @@
 }
 
 /* moon i */
-.childWrapper__01b9c>svg:not(.favoriteIcon__91c06) {
+.childWrapper_a6ce15>svg:not(.favoriteIcon_adf80e) {
   display: var(--default-icon);
 }
 
 /* moon ii */
-.childWrapper__01b9c:has(> svg:not(.favoriteIcon__91c06))::before {
+.childWrapper_a6ce15:has(> svg:not(.favoriteIcon_adf80e))::before {
   content: '';
   display: var(--moon-icon);
   position: absolute;
   width: 65%;
   height: 65%;
   background: var(--text-4);
-  -webkit-mask-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg');
-  mask-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg')
+	-webkit-mask-image: var(--moon-icon-url);
+  mask-image: var(--moon-icon-url);
+	-webkit-mask-size: var(--moon-icon-size);
+  mask-size: var(--moon-icon-size);
+	-webkit-mask-repeat: none;
+  mask-repeat: none;
 }
 
 /* moon iii */
-.wrapper_d281dd:hover .childWrapper__01b9c::before {
-  transition: background-color 0.15s ease-out, transform 0.3s ease-out;
+.wrapper__8436d:hover .childWrapper_a6ce15::before {
+  transition: background-color 0.15s ease-out, transform var(--moon-spin-transition);
   transform: rotate(0deg) scale(1);
 }
 
 /* moon iv */
-.wrapper_d281dd:hover>.childWrapper__01b9c::before,
-.wrapper_d281dd.selected_f5ec8e>.childWrapper__01b9c::before {
+.wrapper__8436d:hover>.childWrapper_a6ce15::before,
+.wrapper__8436d.selected_ae80f7>.childWrapper_a6ce15::before {
   background: var(--text-1);
   transform: rotate(-360deg) scale(0.8);
 }
@@ -235,9 +251,9 @@ svg[class^="slider"] path {
 }
 
 /* browse channels container, header, inner */
-.theme-dark .container__10dc7,
-.theme-dark .header__60bef,
-.theme-dark .container__7590f {
+#app-mount .container__03ec9,
+#app-mount .header__71942,
+#app-mount .container__6b2e5 {
   background-color: var(--bg-1);
 }
 
@@ -255,7 +271,7 @@ svg[class^="slider"] path {
 }
 
 /* sidebar user panel, voice/video connected text */
-[class^="sidebar"] section[class^="panels"] [class*="contents_fb6220"] {
+[class^="sidebar"] section[class^="panels"] [class*="contents__322f4"] {
   font-size: var(--roundness-l);
 }
 
@@ -323,26 +339,52 @@ svg[class^="slider"] path {
   font-weight: 500;
 }
 
+/* less obnoxious super reactions i */
+img.emoji {
+  opacity: 100;
+}
+div[class*="shakeReaction"] {
+  animation: none !important;
+}
+
+/* annoyances cleanup */
+/* less obnoxious super reactions ii */
+div[class^="effectsWrapper"],
+/* help button */
 [href="https://support.discord.com"],
+/* shop tabs */
 [href="/store"],
 [href="/shop"],
+/* dm list search bar */
 nav div[class^="searchBar"],
+/* welcome stickers */
 [class*="welcomeCTA"],
 [class*="clickableSticker"]>div[aria-label]>[class*="assetWrapper"],
 /* profile settings, new styles shop banner */
-[class*="container_d6bff4"],
+[class*="container__686c4"],
 /* profile settings, avatar decoration button */
-[class*="sectionsContainer_a37883"]>[class*="customizationSection__16fec"]:nth-of-type(4),
+[class*="sectionsContainer__45b62"]>[class*="customizationSection__0f57e"]:nth-of-type(4),
 /* profile settings, profile effect button */
-[class*="sectionsContainer_a37883"]>[class*="customizationSection__16fec"]:nth-of-type(5),
-[aria-label*="Send a gift"],
+[class*="sectionsContainer__45b62"]>[class*="customizationSection__0f57e"]:nth-of-type(5),
+/* chat gift button */
+button[aria-label*="Send a gift"],
+/* activity button */
+.buttonContainer_c84998,
 [aria-label*="Start an Activity"],
-/* "new" dot on activity button */
+/* "new" dot on activity button (needs fix) */
 [class*="dot__67e1c maskBlack__1f601"],
+/* server discovery */
 div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]),
-img[class^="avatarDecoration"],
+/* paid avatar crap, & in messages */
 svg[class^="avatarDecoration"],
-svg[class^="bannerSVGWrapper"]>mask,
+img[class^="avatarDecoration"],
+/* paid profile crap */
+[class^="profileEffects"],
+/* paid banner, needs fix: [class*="bannerSVGWrapper"] > mask > image, */
+/* custom emoji note */
+div[class^="nitroTextAndBadge"],
+div[class^="tooltipPremiumContent"],
+/* default corner text & window controls */
 [class^="wordmarkWindows"]>svg,
 [class^="winButton"]>svg {
   display: none;
