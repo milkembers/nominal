@@ -90,8 +90,8 @@ html.theme-light,
   --background-modifier-hover: var(--hover);
   --background-modifier-selected: var(--active);
   --brand-430: var(--accent-3);
-  --brand-500: var(--accent-3);
-  --brand-560: var(--accent-4);
+  --brand-500: var(--brand-experiment); /* accent-3 */
+  --brand-560: var(--brand-experiment-500); /* accent-4 */
   --brand-600: var(--accent-5);
   /* background of reacted reactions */
   --brand-experiment-15a: var(--mention);
@@ -271,13 +271,13 @@ svg[class^="slider"] path {
 }
 
 /* sidebar call, voice/video connected text */
-[class^="sidebar"] section[class^="panels"] [class^="labelWrapper"] [class*="contents__322f4"] {
+[class^="sidebar"] section[class^="panels"] [class^="labelWrapper"] [class*="contents"] {
   font-size: var(--roundness-l);
 }
 
 /* sidebar call, action buttons */
-[class^="sidebar"] section[class^="panels"] [class^="actionButtons"] [class*="buttonIcon"] {
-  width: 18px !important;
+[class^="sidebar"] section[class^="panels"] [class^="actionButtons"] [class*="button"] {
+  padding: 4px;
 }
 
 /* backdrop blur */
@@ -377,8 +377,8 @@ button[aria-label*="Send a gift"],
 [class*="buttonContainer_c84998"],
 /* activity button, sidebar */
 button[aria-label*="Start an Activity"],
-/* "new" dot on activity button (needs hash fix) */
-[class*="dot__67e1c maskBlack__1f601"],
+/* "new" dot on activity button */
+[class*="dot__67e1c maskSecondary_d8f93c"],
 /* server discovery */
 div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]),
 /* paid avatar crap, & in messages */
