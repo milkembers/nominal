@@ -276,8 +276,8 @@ svg[class^="slider"] path {
 }
 
 /* sidebar call, action buttons */
-[class^="sidebar"] section[class^="panels"] [class^="actionButtons"] [class*="button"] {
-  padding: 4px;
+[class^="sidebar"] section[class^="panels"] [class^="actionButtons"] [class*="contents"] {
+  width: 18px;
 }
 
 /* backdrop blur */
@@ -376,7 +376,7 @@ button[aria-label*="Send a gift"],
 /* activity button, call */
 [class*="buttonContainer_c84998"],
 /* activity button, sidebar */
-button[aria-label*="Start an Activity"],
+button[aria-label*="Start An Activity"],
 /* "new" dot on activity button */
 [class*="dot__67e1c maskSecondary_d8f93c"],
 /* server discovery */
