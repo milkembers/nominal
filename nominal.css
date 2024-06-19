@@ -190,12 +190,12 @@ html.theme-light,
 }
 
 /* moon i */
-.childWrapper_a6ce15>svg:not(.favoriteIcon_adf80e) {
+.childWrapper_f90abb>svg:not(.favoriteIcon_dcc7a4) {
   display: var(--default-icon);
 }
 
 /* moon ii */
-.childWrapper_a6ce15:has(> svg:not(.favoriteIcon_adf80e))::before {
+.childWrapper_f90abb:has(> svg:not(.favoriteIcon_dcc7a4))::before {
   content: '';
   display: var(--moon-icon);
   position: absolute;
@@ -203,22 +203,19 @@ html.theme-light,
   height: 65%;
   background: var(--text-4);
 	-webkit-mask-image: var(--moon-icon-url);
-  mask-image: var(--moon-icon-url);
 	-webkit-mask-size: var(--moon-icon-size);
-  mask-size: var(--moon-icon-size);
 	-webkit-mask-repeat: none;
-  mask-repeat: none;
 }
 
 /* moon iii */
-.wrapper__8436d:hover .childWrapper_a6ce15::before {
+.wrapper_f90abb:hover .childWrapper_f90abb::before {
   transition: background-color 0.15s ease-out, transform var(--moon-spin-transition);
   transform: rotate(0deg) scale(1);
 }
 
 /* moon iv */
-.wrapper__8436d:hover>.childWrapper_a6ce15::before,
-.wrapper__8436d.selected_ae80f7>.childWrapper_a6ce15::before {
+.wrapper_f90abb:hover>.childWrapper_f90abb::before,
+.wrapper_f90abb.selected_f90abb>.childWrapper_f90abb::before {
   background: var(--text-1);
   transform: rotate(-360deg) scale(0.8);
 }
@@ -251,9 +248,9 @@ svg[class^="slider"] path {
 }
 
 /* browse channels container, header, inner */
-#app-mount .container__03ec9,
-#app-mount .header__71942,
-#app-mount .container__6b2e5 {
+#app-mount .container_f1fd9c,
+#app-mount .header_f1fd9c,
+#app-mount .container_c2efea {
   background-color: var(--bg-1);
 }
 
@@ -366,19 +363,21 @@ nav div[class^="searchBar"],
 [class*="welcomeCTA"],
 [class*="clickableSticker"]>div[aria-label]>[class*="assetWrapper"],
 /* profile settings, new styles shop banner */
-[class*="container__686c4"],
+[class*="container_da1432"],
 /* profile settings, avatar decoration button */
-[class*="sectionsContainer__45b62"]>[class*="customizationSection__0f57e"]:nth-of-type(4),
+[class*="sectionsContainer_b45d91"]>[class*="customizationSection_b3a5c2"]:nth-of-type(4),
 /* profile settings, profile effect button */
-[class*="sectionsContainer__45b62"]>[class*="customizationSection__0f57e"]:nth-of-type(5),
+[class*="sectionsContainer_b45d91"]>[class*="customizationSection_b3a5c2"]:nth-of-type(5),
 /* chat gift button */
 button[aria-label*="Send a gift"],
 /* activity button, call */
-[class*="buttonContainer_c84998"],
+[class*="buttonContainer"],
 /* activity button, sidebar */
 button[aria-label*="Start An Activity"],
 /* "new" dot on activity button */
-[class*="dot__67e1c maskSecondary_d8f93c"],
+[class*="dot_ccd671 maskSecondary_ccd671"],
+/* "new" dot on activity button 2 electric boogaloo */
+[class*="dot_ccd671 maskBlack_ccd671"],
 /* server discovery */
 div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]),
 /* paid avatar crap, & in messages */
