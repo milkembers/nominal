@@ -371,7 +371,7 @@ nav div[class^="searchBar"],
 /* chat gift button */
 button[aria-label*="Send a gift"],
 /* activity button, call */
-[class*="buttonContainer"],
+[class*="buttonContainer_b6e2f9"],
 /* activity button, sidebar */
 button[aria-label*="Start An Activity"],
 /* "new" dot on activity button */
