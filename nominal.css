@@ -47,14 +47,15 @@
   --roundness-s: 8px;
   --roundness-xs: 4px;
   /* animations, can be disabled with reduced motion */
-  --moon-spin-transition: 0.4s ease; /* moon icon spin */
+  /* moon icon spin */
+  --moon-spin-transition: 0.4s ease;
   /* top left icon, block to show, none to hide */
   --default-icon: none;
   --moon-icon: block;
   --moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg');
   --moon-icon-size: auto;
   /* top left text */
-	--corner-text: 'n o m i n a l';
+  --corner-text: 'n o m i n a l';
   /* font, default is 'gg sans' */
   --font: 'figtree';
   --font-primary: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -63,7 +64,7 @@
 
 /* reduced motion */
 :root.reduce-motion {
-	--moon-spin-transition: none;
+  --moon-spin-transition: none;
 }
 
 html.theme-light,
@@ -90,8 +91,10 @@ html.theme-light,
   --background-modifier-hover: var(--hover);
   --background-modifier-selected: var(--active);
   --brand-430: var(--accent-3);
-  --brand-500: var(--brand-experiment); /* accent-3 */
-  --brand-560: var(--brand-experiment-500); /* accent-4 */
+  /* accent-3 */
+  --brand-500: var(--brand-experiment);
+  /* accent-4 */
+  --brand-560: var(--brand-experiment-500);
   --brand-600: var(--accent-5);
   /* background of reacted reactions */
   --brand-experiment-15a: var(--mention);
@@ -202,9 +205,9 @@ html.theme-light,
   width: 65%;
   height: 65%;
   background: var(--text-4);
-	-webkit-mask-image: var(--moon-icon-url);
-	-webkit-mask-size: var(--moon-icon-size);
-	-webkit-mask-repeat: none;
+  -webkit-mask-image: var(--moon-icon-url);
+  -webkit-mask-size: var(--moon-icon-size);
+  -webkit-mask-repeat: none;
 }
 
 /* moon iii */
@@ -345,6 +348,7 @@ svg[class^="slider"] path {
 img.emoji {
   opacity: 100;
 }
+
 div[class*="shakeReaction"] {
   animation: none !important;
 }

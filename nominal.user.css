@@ -7,4 +7,6 @@
 @updateURL      https://milkembers.github.io/nominal/nominal.user.css
 @preprocessor   stylus
 ==/UserStyle== */
-@-moz-document domain("discord.com"){@import url('https://milkembers.github.io/nominal/nominal.min.css');}
+@-moz-document domain("discord.com") {
+    @import url('https://milkembers.github.io/nominal/nominal.min.css');
+}
