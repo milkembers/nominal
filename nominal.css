@@ -352,8 +352,10 @@ div[class*="shakeReaction"] {
 /* annoyances cleanup */
 /* less obnoxious super reactions ii */
 div[class^="effectsWrapper"],
-/* help button */
+/* top help button */
 [href="https://support.discord.com"],
+/* top user profile button (unavailable) */
+[aria-label*="Show User Profile (Unavailable)"],
 /* shop tabs */
 [href="/store"],
 [href="/shop"],
@@ -364,12 +366,20 @@ nav div[class^="searchBar"],
 [class*="clickableSticker"]>div[aria-label]>[class*="assetWrapper"],
 /* profile settings, new styles shop banner */
 [class*="container_da1432"],
-/* profile settings, avatar decoration button */
+/* profile settings, avatar decoration button, both tabs */
 [class*="sectionsContainer_b45d91"]>[class*="customizationSection_b3a5c2"]:nth-of-type(4),
-/* profile settings, profile effect button */
+[class*="sectionsContainer_e466c8"]>[class*="customizationSection_b3a5c2"]:nth-of-type(4),
+/* profile settings, profile effect button, both tabs */
 [class*="sectionsContainer_b45d91"]>[class*="customizationSection_b3a5c2"]:nth-of-type(5),
+[class*="sectionsContainer_e466c8"]>[class*="customizationSection_b3a5c2"]:nth-of-type(5),
 /* chat gift button */
 button[aria-label*="Send a gift"],
+/* chat gif button */
+button[aria-label*="Open GIF picker"],
+/* chat sticker button */
+button[aria-label*="Open sticker picker"],
+/* chat apps button */
+[class^="channelAppLauncher"],
 /* activity button, call */
 [class*="buttonContainer_b6e2f9"],
 /* activity button, sidebar */
