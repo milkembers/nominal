@@ -2,7 +2,7 @@
 
 a minimal, dark theme with a pop of color that hopes to improve the design - at least a little bit
 
-![preview](https://milkembers.github.io/nominal/assets/prev.png)
+![preview](https://milkembers.github.io/nominal/assets/prev.png?)
 
 ## features
 
