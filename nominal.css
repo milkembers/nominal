@@ -363,7 +363,7 @@ div[class^="effectsWrapper"],
 /* shop tabs */
 [href="/store"],
 [href="/shop"],
-/* dm list search bar */
+/* dm list & settings search bar */
 nav div[class^="searchBar"],
 /* welcome stickers */
 [class*="welcomeCTA"],
@@ -393,13 +393,17 @@ button[aria-label*="Start An Activity"],
 /* "new" dot on activity button 2 electric boogaloo */
 [class*="dot_ccd671 maskBlack_ccd671"],
 /* server discovery */
-div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]),
+div[class*="listItem"]:has(div[aria-label="Discover"]),
 /* paid avatar crap, & in messages */
 svg[class^="avatarDecoration"],
 img[class^="avatarDecoration"],
 /* paid profile crap */
 [class^="profileEffects"],
 /* paid banner, needs fix: [class*="bannerSVGWrapper"] > mask > image, */
+/* settings merch button */
+div[aria-label="Merch"],
+/* settings social buttons */
+[class^="socialLinks"],
 /* custom emoji note */
 div[class^="nitroTextAndBadge"],
 div[class^="tooltipPremiumContent"],
