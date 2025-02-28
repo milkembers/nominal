@@ -193,12 +193,12 @@ html.theme-light,
 }
 
 /* moon i */
-.childWrapper_f90abb>svg:not(.favoriteIcon_dcc7a4) {
+.childWrapper__6e9f8>svg:not(.favoriteIcon_dcc7a4) {
   display: var(--default-icon);
 }
 
 /* moon ii */
-.childWrapper_f90abb:has(> svg:not(.favoriteIcon_dcc7a4))::before {
+.childWrapper__6e9f8:has(> svg:not(.favoriteIcon_dcc7a4))::before {
   content: '';
   display: var(--moon-icon);
   position: absolute;
@@ -211,14 +211,14 @@ html.theme-light,
 }
 
 /* moon iii */
-.wrapper_f90abb:hover .childWrapper_f90abb::before {
+.wrapper__6e9f8:hover .childWrapper__6e9f8::before {
   transition: background-color 0.15s ease-out, transform var(--moon-spin-transition);
   transform: rotate(0deg) scale(1);
 }
 
 /* moon iv */
-.wrapper_f90abb:hover>.childWrapper_f90abb::before,
-.wrapper_f90abb.selected_f90abb>.childWrapper_f90abb::before {
+.wrapper__6e9f8:hover>.childWrapper__6e9f8::before,
+.wrapper__6e9f8.selected__6e9f8>.childWrapper__6e9f8::before {
   background: var(--text-1);
   transform: rotate(-360deg) scale(0.8);
 }
