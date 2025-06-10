@@ -52,7 +52,7 @@
   /* top left icon, block to show, none to hide */
   --default-icon: none;
   --moon-icon: block;
-  --moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg');
+  --moon-icon-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg');
   --moon-icon-size: auto;
   /* top left text */
   --corner-text: 'n o m i n a l';
