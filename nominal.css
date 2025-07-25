@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --brand-experiment: rgb(200, 140, 170);
-  --brand-experiment-500: rgb(170, 110, 140);
-  --brand-experiment-560: var(--brand-experiment);
-  --brand-experiment-600: var(--brand-experiment-500);
-  --control-brand-foreground: var(--brand-experiment);
+  --brand-360: rgb(200, 140, 170);
+  --brand-500: rgb(170, 110, 140);
+  --blurple-50: var(--brand-360);
+  --bg-brand: var(--brand-500);
+  --control-brand-foreground: var(--brand-360);
   --background-accent: rgb(200, 60, 100);
   --local-bot-side: var(--background-accent);
   --selection-col: rgb(94, 94, 95, 0.5);
@@ -92,12 +92,12 @@ html.theme-light,
   --background-modifier-selected: var(--active);
   --brand-430: var(--accent-3);
   /* accent-3 */
-  --brand-500: var(--brand-experiment);
+  --brand-500: var(--brand-360);
   /* accent-4 */
-  --brand-560: var(--brand-experiment-500);
+  --brand-560: var(--brand-500);
   --brand-600: var(--accent-5);
   /* background of reacted reactions */
-  --brand-experiment-15a: var(--mention);
+  --brand-15a: var(--mention);
   --channel-icon: var(--text-4);
   --channel-text-area-placeholder: var(--text-5);
   --channels-default: var(--text-4);
@@ -123,104 +123,41 @@ html.theme-light,
   --text-normal: var(--text-3);
 }
 
-/* top bar title i */
-[class^='wordmarkWindows'] {
-  padding: 6px var(--roundness-l);
+/* moon */
+.wrapper__6e9f8[data-list-item-id='guildsnav___home']>.childWrapper__6e9f8>svg {
+  display: none;
 }
 
-/* top bar title ii */
-[class^='wordmarkWindows']::after {
-  content: var(--corner-text);
-  display: block;
-  position: relative;
-  font: 11px var(--font);
-  font-weight: 700;
-  color: var(--text-5);
-  transform: scaleX(1.1);
-  margin-left: 2px;
-}
-
-/* top bar height */
-[class^='typeWindows'] {
-  height: calc(var(--roundness-l) + 8px);
-}
-
-/* window controls i */
-[class^='winButton'] {
-  background: none !important;
-  top: 0;
-  width: calc(var(--roundness-l) + 8px);
-  height: calc(var(--roundness-l) + 8px);
-  margin: -2px 4px 0px 0px;
-}
-
-/* window controls ii */
-[class^='winButton']::after {
-  content: '';
-  height: var(--roundness-l);
-  width: var(--roundness-l);
-  border-radius: var(--roundness-l);
-}
-
-/* window controls iii */
-[class^='winButton']:hover::after {
-  filter: brightness(0.8);
-}
-
-/* window controls iv */
-[class^='winButton']:active::after {
-  transform: scale(0.9);
-}
-
-/* window controls v */
-[class^='winButtonClose'] {
-  margin: -2px calc(var(--roundness-l) - 4px) 0px 0px;
-}
-
-/* window controls, minimize */
-[class^='winButtonMinMax']:nth-child(4)::after {
-  background-color: var(--min) !important;
-}
-
-/* window controls, maximize */
-[class^='winButtonMinMax']:nth-child(3)::after {
-  background-color: var(--max) !important;
-}
-
-/* window controls, close */
-[class^='winButtonClose']::after {
-  background-color: var(--close) !important;
-}
-
-/* moon i */
-.childWrapper__6e9f8>svg:not(.favoriteIcon_dcc7a4) {
-  display: var(--default-icon);
-}
-
-/* moon ii */
-.childWrapper__6e9f8:has(> svg:not(.favoriteIcon_dcc7a4))::before {
+.wrapper__6e9f8[data-list-item-id='guildsnav___home']>.childWrapper__6e9f8::before {
   content: '';
   display: var(--moon-icon);
   position: absolute;
   width: 65%;
   height: 65%;
   background: var(--text-4);
-  -webkit-mask-image: var(--moon-icon-url);
-  -webkit-mask-size: var(--moon-icon-size);
-  -webkit-mask-repeat: none;
+  mask-image: var(--moon-icon-url);
+  mask-size: var(--moon-icon-size);
+  mask-repeat: no-repeat;
+  transition: background-color 0.15s ease-out;
 }
 
-/* moon iii */
-.wrapper__6e9f8:hover .childWrapper__6e9f8::before {
+.wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover>.childWrapper__6e9f8::before {
   transition: background-color 0.15s ease-out, transform var(--moon-spin-transition);
   transform: rotate(0deg) scale(1);
 }
 
-/* moon iv */
-.wrapper__6e9f8:hover>.childWrapper__6e9f8::before,
-.wrapper__6e9f8.selected__6e9f8>.childWrapper__6e9f8::before {
+.wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover>.childWrapper__6e9f8::before,
+.wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8>.childWrapper__6e9f8::before {
   background: var(--text-1);
   transform: rotate(-360deg) scale(0.8);
+}
+
+.wrapper__6e9f8[data-list-item-id='guildsnav___home'] .childWrapper__6e9f8::before {
+  transition: background-color 0.15s ease-out, transform var(--moon-spin-transition);
+}
+
+.wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8>.childWrapper__6e9f8 {
+  background: var(--brand-360);
 }
 
 /* text selection */
@@ -231,17 +168,12 @@ html.theme-light,
 
 /* toggle buttons i */
 div[class*="checked"] {
-  background-color: var(--brand-experiment-500) !important;
+  background-color: var(--brand-500) !important;
 }
 
 /* toggle buttons ii */
 svg[class^="slider"] path {
-  fill: var(--brand-experiment-560);
-}
-
-/* my account */
-[class^="accountProfileCard"] {
-  background: var(--bg-4);
+  fill: var(--brand-560);
 }
 
 /* symbols */
@@ -250,34 +182,9 @@ svg[class^="slider"] path {
   border-radius: var(--roundness-s);
 }
 
-/* browse channels container, header, inner */
-#app-mount .container_f1fd9c,
-#app-mount .header_f1fd9c,
-#app-mount .container_c2efea {
-  background-color: var(--bg-1);
-}
-
 /* sidebar user panel */
 [class^="sidebar"] section[class^="panels"] {
-  margin: var(--roundness-s);
-  padding: 3px;
   border-radius: var(--roundness-l);
-}
-
-/* sidebar user panel, align icon trio */
-[class^="sidebar"] section[class^="panels"] [class^="avatarWrapper"] {
-  min-width: 104px;
-  margin-right: 2px;
-}
-
-/* sidebar call, voice/video connected text */
-[class^="sidebar"] section[class^="panels"] [class^="labelWrapper"] [class*="contents"] {
-  font-size: var(--roundness-l);
-}
-
-/* sidebar call, action buttons */
-[class^="sidebar"] section[class^="panels"] [class^="actionButtons"] [class*="contents"] {
-  width: 18px;
 }
 
 /* backdrop blur */
@@ -302,6 +209,11 @@ svg[class^="slider"] path {
   border-radius: var(--roundness-m);
 }
 
+.menuItemLabel_ce8328,
+.menuItemIcon_ce8328 {
+  background: var(--bg-clear);
+}
+
 /* message actions menu */
 [class^="menu"]::after,
 [class^="submenu"]::after {
@@ -313,38 +225,14 @@ svg[class^="slider"] path {
   border-radius: var(--roundness-m);
 }
 
-/* no blur on sidebar profile popout */
-[class^="userPopoutOuter"] *::after {
-  backdrop-filter: none !important;
-}
-
-/* status changer popout */
-[class^="userPopoutOuter"] [aria-label="Set Status"] [class^="submenu"]::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  backdrop-filter: blur(var(--roundness-xl));
-  border-radius: var(--roundness-s);
-}
-
-/* right click menu on emoji */
-[class^="positionLayer"]~[class*="layer"]>[class^="menu"]::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  backdrop-filter: blur(var(--roundness-xl));
-  border-radius: var(--roundness-m);
-}
-
 [class*="clickableSticker"]>div[aria-label]::after {
   content: "A sticker was hidden.";
   color: var(--text-4);
   font-weight: 500;
 }
 
-/* less obnoxious super reactions i */
+/* annoyances cleanup */
+/* less obnoxious super reactions */
 img.emoji {
   opacity: 100;
 }
@@ -353,8 +241,6 @@ div[class*="shakeReaction"] {
   animation: none !important;
 }
 
-/* annoyances cleanup */
-/* less obnoxious super reactions ii */
 div[class^="effectsWrapper"],
 /* top help button */
 [href="https://support.discord.com"],
@@ -368,14 +254,6 @@ nav div[class^="searchBar"],
 /* welcome stickers */
 [class*="welcomeCTA"],
 [class*="clickableSticker"]>div[aria-label]>[class*="assetWrapper"],
-/* profile settings, new styles shop banner */
-[class*="container_da1432"],
-/* profile settings, avatar decoration button, both tabs */
-[class*="sectionsContainer_b45d91"]>[class*="customizationSection_b3a5c2"]:nth-of-type(4),
-[class*="sectionsContainer_e466c8"]>[class*="customizationSection_b3a5c2"]:nth-of-type(4),
-/* profile settings, profile effect button, both tabs */
-[class*="sectionsContainer_b45d91"]>[class*="customizationSection_b3a5c2"]:nth-of-type(5),
-[class*="sectionsContainer_e466c8"]>[class*="customizationSection_b3a5c2"]:nth-of-type(5),
 /* chat gift button */
 button[aria-label*="Send a gift"],
 /* chat gif button */
@@ -394,21 +272,15 @@ button[aria-label*="Start An Activity"],
 [class*="dot_ccd671 maskBlack_ccd671"],
 /* server discovery */
 div[class*="listItem"]:has(div[aria-label="Discover"]),
-/* paid avatar crap, & in messages */
+/* paid avatar crap, & in messages
 svg[class^="avatarDecoration"],
 img[class^="avatarDecoration"],
-/* paid profile crap */
+/* paid profile crap
 [class^="profileEffects"],
 /* paid banner, needs fix: [class*="bannerSVGWrapper"] > mask > image, */
 /* settings merch button */
 div[aria-label="Merch"],
 /* settings social buttons */
-[class^="socialLinks"],
-/* custom emoji note */
-div[class^="nitroTextAndBadge"],
-div[class^="tooltipPremiumContent"],
-/* default corner text & window controls */
-[class^="wordmarkWindows"]>svg,
-[class^="winButton"]>svg {
+[class^="socialLinks"] {
   display: none;
 }
