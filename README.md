@@ -1,3 +1,7 @@
+> [!IMPORTANT]  
+> # NOTE! since the app's redesign, nominal doesn't work correctly anymore. it still themes a few things, but it's mostly busted.
+> ### I haven't had the time to sit down and adapt everything, but it's planned (eventually).
+
 # 🌙🌸 nominal
 
 a minimal, dark theme with a pop of color that hopes to improve the design - at least a little bit
