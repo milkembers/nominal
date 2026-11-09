@@ -1,10 +1,10 @@
 > [!IMPORTANT]  
-> # NOTE! since the app's redesign, nominal doesn't work correctly anymore. it still themes a few things, but it's mostly busted.
-> ### I haven't had the time to sit down and adapt everything, but it's planned (eventually).
+> ### since the app refresh, nominal doesn't look exactly like the preview image cosmetically, but the core functionality works (annoyance removal).
+> ### I haven't had the time to sit down and adapt everything, but it's planned... eventually.
 
 # 🌙🌸 nominal
 
-a minimal, dark theme with a pop of color that hopes to improve the design - at least a little bit
+a minimal, dark theme with a pop of colour that hopes to improve the design - at least a little bit
 
 ![preview](https://milkembers.github.io/nominal/assets/prev.png?)
 
@@ -12,8 +12,8 @@ a minimal, dark theme with a pop of color that hopes to improve the design - at 
 
 - cute accent colours for checkboxes and selections
 - blurred context menus and backdrops
-- hides many annoyances like the nitro shop, avatar decorations and welcome stickers
-- ~~nitro colour theme friendly~~ (needs a little work after the 10/23 update, not likely to fix)
+- hides many annoyances like the nitro home, shop, quests, and welcome stickers
+- ~~nitro colour theme friendly~~ (needs a little work, probably?)
 
 ## install
 
@@ -37,8 +37,8 @@ follow this link to [install with Stylus](nominal.user.css)
 
 ## credits
 
-- the beautiful [midnight theme](https://github.com/refact0r/midnight-discord) for moon icon, window controls & some misc variables
-- the lovely [catppuccin palette](https://github.com/catppuccin/catppuccin) for a few colors
+- the beautiful [midnight theme](https://github.com/refact0r/midnight-discord) for moon icon, original window controls & some misc variables
+- the lovely [catppuccin palette](https://github.com/catppuccin/catppuccin) for a few colours
 - nvkomimi, the author of the original theme that passed it onto me
 
 ## license
