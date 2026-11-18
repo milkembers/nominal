@@ -1,139 +1,252 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fira+Code:wght@300..700&display=swap');
 
 :root {
-	--brand-360: rgb(200, 140, 170);
-	--brand-500: rgb(170, 110, 140);
-	--blurple-50: var(--brand-360);
-	--bg-brand: var(--brand-500);
-	--control-brand-foreground: var(--brand-360);
-	--background-accent: rgb(200, 60, 100);
-	--local-bot-side: var(--background-accent);
-	--selection-col: rgb(94, 94, 95, 0.5);
-	--scrollbar-auto-scrollbar-color-thumb: var(--primary-730);
-	--scrollbar-auto-scrollbar-color-track: var(--primary-630);
-	--scrollbar-auto-thumb: var(--bg-3);
-	--scrollbar-auto-track: transparent;
-	--scrollbar-thin-thumb: var(--bg-3);
-	--scrollbar-thin-track: transparent;
-	--bg-clear: rgba(0, 0, 0, 0);
-	--bg-black: rgb(0, 0, 0);
-	--bg-1: rgb(8, 8, 9);
-	--bg-2: rgb(16, 16, 17);
-	--bg-3: rgb(21, 21, 22);
-	--bg-4: rgb(10, 10, 11);
-	--bg-5: rgba(10, 10, 11, 0.7);
+	--blurple-1: hsl(var(--blurple-1-hsl) / 1);
+	--blurple-1-hsl: 325.465 calc(var(--saturation-factor, 1) * 41.248%) 95.098%;
+	--blurple-2: hsl(var(--blurple-2-hsl) / 1);
+	--blurple-2-hsl: 326.494 calc(var(--saturation-factor, 1) * 41.248%) 94.548%;
+	--blurple-3: hsl(var(--blurple-3-hsl) / 1);
+	--blurple-3-hsl: 325.69 calc(var(--saturation-factor, 1) * 41.248%) 93.814%;
+	--blurple-4: hsl(var(--blurple-4-hsl) / 1);
+	--blurple-4-hsl: 323.398 calc(var(--saturation-factor, 1) * 41.248%) 93.08%;
+	--blurple-5: hsl(var(--blurple-5-hsl) / 1);
+	--blurple-5-hsl: 324.296 calc(var(--saturation-factor, 1) * 41.248%) 92.53%;
+	--blurple-6: hsl(var(--blurple-6-hsl) / 1);
+	--blurple-6-hsl: 322.507 calc(var(--saturation-factor, 1) * 41.248%) 91.797%;
+	--blurple-7: hsl(var(--blurple-7-hsl) / 1);
+	--blurple-7-hsl: 323.326 calc(var(--saturation-factor, 1) * 41.248%) 91.246%;
+	--blurple-8: hsl(var(--blurple-8-hsl) / 1);
+	--blurple-8-hsl: 323.065 calc(var(--saturation-factor, 1) * 41.248%) 90.513%;
+	--blurple-9: hsl(var(--blurple-9-hsl) / 1);
+	--blurple-9-hsl: 322.612 calc(var(--saturation-factor, 1) * 41.248%) 89.963%;
+	--blurple-10: hsl(var(--blurple-10-hsl) / 1);
+	--blurple-10-hsl: 323.279 calc(var(--saturation-factor, 1) * 41.248%) 89.413%;
+	--blurple-11: hsl(var(--blurple-11-hsl) / 1);
+	--blurple-11-hsl: 322.065 calc(var(--saturation-factor, 1) * 41.248%) 88.679%;
+	--blurple-12: hsl(var(--blurple-12-hsl) / 1);
+	--blurple-12-hsl: 322.684 calc(var(--saturation-factor, 1) * 41.248%) 88.129%;
+	--blurple-13: hsl(var(--blurple-13-hsl) / 1);
+	--blurple-13-hsl: 322.528 calc(var(--saturation-factor, 1) * 41.248%) 87.395%;
+	--blurple-14: hsl(var(--blurple-14-hsl) / 1);
+	--blurple-14-hsl: 322.208 calc(var(--saturation-factor, 1) * 41.248%) 86.845%;
+	--blurple-15: hsl(var(--blurple-15-hsl) / 1);
+	--blurple-15-hsl: 322.736 calc(var(--saturation-factor, 1) * 41.248%) 86.294%;
+	--blurple-16: hsl(var(--blurple-16-hsl) / 1);
+	--blurple-16-hsl: 322.433 calc(var(--saturation-factor, 1) * 41.248%) 85.744%;
+	--blurple-17: hsl(var(--blurple-17-hsl) / 1);
+	--blurple-17-hsl: 322.913 calc(var(--saturation-factor, 1) * 41.248%) 85.194%;
+	--blurple-18: hsl(var(--blurple-18-hsl) / 1);
+	--blurple-18-hsl: 322.776 calc(var(--saturation-factor, 1) * 41.248%) 84.46%;
+	--blurple-19: hsl(var(--blurple-19-hsl) / 1);
+	--blurple-19-hsl: 322.507 calc(var(--saturation-factor, 1) * 41.248%) 83.91%;
+	--blurple-20: hsl(var(--blurple-20-hsl) / 1);
+	--blurple-20-hsl: 322.93 calc(var(--saturation-factor, 1) * 41.248%) 83.36%;
+	--blurple-21: hsl(var(--blurple-21-hsl) / 1);
+	--blurple-21-hsl: 323.326 calc(var(--saturation-factor, 1) * 41.248%) 82.81%;
+	--blurple-22: hsl(var(--blurple-22-hsl) / 1);
+	--blurple-22-hsl: 323.065 calc(var(--saturation-factor, 1) * 41.248%) 82.26%;
+	--blurple-23: hsl(var(--blurple-23-hsl) / 1);
+	--blurple-23-hsl: 323.432 calc(var(--saturation-factor, 1) * 41.248%) 81.709%;
+	--blurple-24: hsl(var(--blurple-24-hsl) / 1);
+	--blurple-24-hsl: 323.778 calc(var(--saturation-factor, 1) * 41.248%) 81.159%;
+	--blurple-25: hsl(var(--blurple-25-hsl) / 1);
+	--blurple-25-hsl: 323.527 calc(var(--saturation-factor, 1) * 41.248%) 80.609%;
+	--blurple-26: hsl(var(--blurple-26-hsl) / 1);
+	--blurple-26-hsl: 323.85 calc(var(--saturation-factor, 1) * 41.248%) 80.059%;
+	--blurple-27: hsl(var(--blurple-27-hsl) / 1);
+	--blurple-27-hsl: 324.056 calc(var(--saturation-factor, 1) * 40.505%) 79.325%;
+	--blurple-28: hsl(var(--blurple-28-hsl) / 1);
+	--blurple-28-hsl: 324.254 calc(var(--saturation-factor, 1) * 40.518%) 78.958%;
+	--blurple-29: hsl(var(--blurple-29-hsl) / 1);
+	--blurple-29-hsl: 324.446 calc(var(--saturation-factor, 1) * 39.838%) 78.225%;
+	--blurple-30: hsl(var(--blurple-30-hsl) / 1);
+	--blurple-30-hsl: 324.72 calc(var(--saturation-factor, 1) * 39.873%) 77.675%;
+	--blurple-31: hsl(var(--blurple-31-hsl) / 1);
+	--blurple-31-hsl: 324.387 calc(var(--saturation-factor, 1) * 39.252%) 76.94%;
+	--blurple-32: hsl(var(--blurple-32-hsl) / 1);
+	--blurple-32-hsl: 324.565 calc(var(--saturation-factor, 1) * 38.67%) 76.207%;
+	--blurple-33: hsl(var(--blurple-33-hsl) / 1);
+	--blurple-33-hsl: 325.229 calc(var(--saturation-factor, 1) * 38.709%) 75.84%;
+	--blurple-34: hsl(var(--blurple-34-hsl) / 1);
+	--blurple-34-hsl: 325.388 calc(var(--saturation-factor, 1) * 38.17%) 75.106%;
+	--blurple-35: hsl(var(--blurple-35-hsl) / 1);
+	--blurple-35-hsl: 325.541 calc(var(--saturation-factor, 1) * 38.215%) 74.74%;
+	--blurple-36: hsl(var(--blurple-36-hsl) / 1);
+	--blurple-36-hsl: 325.69 calc(var(--saturation-factor, 1) * 37.712%) 74.006%;
+	--blurple-37: hsl(var(--blurple-37-hsl) / 1);
+	--blurple-37-hsl: 325.905 calc(var(--saturation-factor, 1) * 37.786%) 73.456%;
+	--blurple-38: hsl(var(--blurple-38-hsl) / 1);
+	--blurple-38-hsl: 326.429 calc(var(--saturation-factor, 1) * 37.293%) 72.906%;
+	--blurple-39: hsl(var(--blurple-39-hsl) / 1);
+	--blurple-39-hsl: 326.176 calc(var(--saturation-factor, 1) * 37.372%) 72.355%;
+	--blurple-40: hsl(var(--blurple-40-hsl) / 1);
+	--blurple-40-hsl: 326.683 calc(var(--saturation-factor, 1) * 36.906%) 71.805%;
+	--blurple-41: hsl(var(--blurple-41-hsl) / 1);
+	--blurple-41-hsl: 326.804 calc(var(--saturation-factor, 1) * 36.489%) 71.072%;
+	--blurple-42: hsl(var(--blurple-42-hsl) / 1);
+	--blurple-42-hsl: 327.351 calc(var(--saturation-factor, 1) * 36.549%) 70.705%;
+	--blurple-43: hsl(var(--blurple-43-hsl) / 1);
+	--blurple-43-hsl: 327.831 calc(var(--saturation-factor, 1) * 36.124%) 70.154%;
+	--blurple-44: hsl(var(--blurple-44-hsl) / 1);
+	--blurple-44-hsl: 327.982 calc(var(--saturation-factor, 1) * 36.218%) 69.604%;
+	--blurple-45: hsl(var(--blurple-45-hsl) / 1);
+	--blurple-45-hsl: 328.031 calc(var(--saturation-factor, 1) * 35.814%) 69.054%;
+	--blurple-46: hsl(var(--blurple-46-hsl) / 1);
+	--blurple-46-hsl: 328.534 calc(var(--saturation-factor, 1) * 35.878%) 68.688%;
+	--blurple-47: hsl(var(--blurple-47-hsl) / 1);
+	--blurple-47-hsl: 328.984 calc(var(--saturation-factor, 1) * 35.493%) 68.138%;
+	--blurple-48: hsl(var(--blurple-48-hsl) / 1);
+	--blurple-48-hsl: 329.465 calc(var(--saturation-factor, 1) * 35.559%) 67.77%;
+	--blurple-49: hsl(var(--blurple-49-hsl) / 1);
+	--blurple-49-hsl: 329.539 calc(var(--saturation-factor, 1) * 35.223%) 67.037%;
+	--blurple-50: hsl(var(--blurple-50-hsl) / 1);
+	--blurple-50-hsl: 330 calc(var(--saturation-factor, 1) * 35.29%) 66.67%;
+	--blurple-51: hsl(var(--blurple-51-hsl) / 1);
+	--blurple-51-hsl: 330.064 calc(var(--saturation-factor, 1) * 34.08%) 65.414%;
+	--blurple-52: hsl(var(--blurple-52-hsl) / 1);
+	--blurple-52-hsl: 330.122 calc(var(--saturation-factor, 1) * 32.909%) 64.159%;
+	--blurple-53: hsl(var(--blurple-53-hsl) / 1);
+	--blurple-53-hsl: 330.17 calc(var(--saturation-factor, 1) * 31.773%) 62.904%;
+	--blurple-54: hsl(var(--blurple-54-hsl) / 1);
+	--blurple-54-hsl: 330.251 calc(var(--saturation-factor, 1) * 31.036%) 61.805%;
+	--blurple-55: hsl(var(--blurple-55-hsl) / 1);
+	--blurple-55-hsl: 330.284 calc(var(--saturation-factor, 1) * 29.945%) 60.55%;
+	--blurple-56: hsl(var(--blurple-56-hsl) / 1);
+	--blurple-56-hsl: 330.352 calc(var(--saturation-factor, 1) * 29.229%) 59.451%;
+	--blurple-57: hsl(var(--blurple-57-hsl) / 1);
+	--blurple-57-hsl: 329.949 calc(var(--saturation-factor, 1) * 28.518%) 58.353%;
+	--blurple-58: hsl(var(--blurple-58-hsl) / 1);
+	--blurple-58-hsl: 329.94 calc(var(--saturation-factor, 1) * 27.477%) 57.097%;
+	--blurple-59: hsl(var(--blurple-59-hsl) / 1);
+	--blurple-59-hsl: 329.975 calc(var(--saturation-factor, 1) * 26.782%) 55.999%;
+	--blurple-60: hsl(var(--blurple-60-hsl) / 1);
+	--blurple-60-hsl: 330 calc(var(--saturation-factor, 1) * 26.09%) 54.9%;
+	--blurple-61: hsl(var(--blurple-61-hsl) / 1);
+	--blurple-61-hsl: 329.818 calc(var(--saturation-factor, 1) * 26.15%) 53.392%;
+	--blurple-62: hsl(var(--blurple-62-hsl) / 1);
+	--blurple-62-hsl: 329.625 calc(var(--saturation-factor, 1) * 26.214%) 51.886%;
+	--blurple-63: hsl(var(--blurple-63-hsl) / 1);
+	--blurple-63-hsl: 329.491 calc(var(--saturation-factor, 1) * 26.407%) 50.594%;
+	--blurple-64: hsl(var(--blurple-64-hsl) / 1);
+	--blurple-64-hsl: 329.281 calc(var(--saturation-factor, 1) * 26.482%) 49.087%;
+	--blurple-65: hsl(var(--blurple-65-hsl) / 1);
+	--blurple-65-hsl: 329.059 calc(var(--saturation-factor, 1) * 26.562%) 47.58%;
+	--blurple-66: hsl(var(--blurple-66-hsl) / 1);
+	--blurple-66-hsl: 328.904 calc(var(--saturation-factor, 1) * 26.783%) 46.288%;
+	--blurple-67: hsl(var(--blurple-67-hsl) / 1);
+	--blurple-67-hsl: 328.659 calc(var(--saturation-factor, 1) * 26.878%) 44.781%;
+	--blurple-68: hsl(var(--blurple-68-hsl) / 1);
+	--blurple-68-hsl: 328.488 calc(var(--saturation-factor, 1) * 27.123%) 43.49%;
+	--blurple-69: hsl(var(--blurple-69-hsl) / 1);
+	--blurple-69-hsl: 328.217 calc(var(--saturation-factor, 1) * 27.237%) 41.982%;
+	--blurple-70: hsl(var(--blurple-70-hsl) / 1);
+	--blurple-70-hsl: 328.027 calc(var(--saturation-factor, 1) * 27.509%) 40.691%;
+	--blurple-71: hsl(var(--blurple-71-hsl) / 1);
+	--blurple-71-hsl: 327.726 calc(var(--saturation-factor, 1) * 27.646%) 39.183%;
+	--blurple-72: hsl(var(--blurple-72-hsl) / 1);
+	--blurple-72-hsl: 327.514 calc(var(--saturation-factor, 1) * 27.953%) 37.892%;
+	--blurple-73: hsl(var(--blurple-73-hsl) / 1);
+	--blurple-73-hsl: 327.883 calc(var(--saturation-factor, 1) * 27.79%) 36.815%;
+	--blurple-74: hsl(var(--blurple-74-hsl) / 1);
+	--blurple-74-hsl: 327.661 calc(var(--saturation-factor, 1) * 28.123%) 35.524%;
+	--blurple-75: hsl(var(--blurple-75-hsl) / 1);
+	--blurple-75-hsl: 327.429 calc(var(--saturation-factor, 1) * 28.481%) 34.231%;
+	--blurple-76: hsl(var(--blurple-76-hsl) / 1);
+	--blurple-76-hsl: 327.059 calc(var(--saturation-factor, 1) * 28.689%) 32.725%;
+	--blurple-77: hsl(var(--blurple-77-hsl) / 1);
+	--blurple-77-hsl: 326.006 calc(var(--saturation-factor, 1) * 29.102%) 31.432%;
+	--blurple-78: hsl(var(--blurple-78-hsl) / 1);
+	--blurple-78-hsl: 325.708 calc(var(--saturation-factor, 1) * 29.551%) 30.141%;
+	--blurple-79: hsl(var(--blurple-79-hsl) / 1);
+	--blurple-79-hsl: 325.392 calc(var(--saturation-factor, 1) * 30.039%) 28.85%;
+	--blurple-80: hsl(var(--blurple-80-hsl) / 1);
+	--blurple-80-hsl: 325.755 calc(var(--saturation-factor, 1) * 29.903%) 27.773%;
+	--blurple-81: hsl(var(--blurple-81-hsl) / 1);
+	--blurple-81-hsl: 325.417 calc(var(--saturation-factor, 1) * 30.454%) 26.482%;
+	--blurple-82: hsl(var(--blurple-82-hsl) / 1);
+	--blurple-82-hsl: 325.059 calc(var(--saturation-factor, 1) * 31.06%) 25.189%;
+	--blurple-83: hsl(var(--blurple-83-hsl) / 1);
+	--blurple-83-hsl: 324.678 calc(var(--saturation-factor, 1) * 31.731%) 23.898%;
+	--blurple-84: hsl(var(--blurple-84-hsl) / 1);
+	--blurple-84-hsl: 325.256 calc(var(--saturation-factor, 1) * 31.872%) 23.036%;
+	--blurple-85: hsl(var(--blurple-85-hsl) / 1);
+	--blurple-85-hsl: 323.839 calc(var(--saturation-factor, 1) * 32.658%) 21.745%;
+	--blurple-86: hsl(var(--blurple-86-hsl) / 1);
+	--blurple-86-hsl: 324.202 calc(var(--saturation-factor, 1) * 32.612%) 20.669%;
+	--blurple-87: hsl(var(--blurple-87-hsl) / 1);
+	--blurple-87-hsl: 323.726 calc(var(--saturation-factor, 1) * 33.544%) 19.376%;
+	--blurple-88: hsl(var(--blurple-88-hsl) / 1);
+	--blurple-88-hsl: 323.474 calc(var(--saturation-factor, 1) * 34.86%) 18.3%;
+	--blurple-89: hsl(var(--blurple-89-hsl) / 1);
+	--blurple-89-hsl: 323.859 calc(var(--saturation-factor, 1) * 34.942%) 17.223%;
+	--blurple-90: hsl(var(--blurple-90-hsl) / 1);
+	--blurple-90-hsl: 322.059 calc(var(--saturation-factor, 1) * 36.264%) 15.932%;
+	--blurple-91: hsl(var(--blurple-91-hsl) / 1);
+	--blurple-91-hsl: 322.711 calc(var(--saturation-factor, 1) * 36.739%) 15.07%;
+	--blurple-92: hsl(var(--blurple-92-hsl) / 1);
+	--blurple-92-hsl: 322.059 calc(var(--saturation-factor, 1) * 38.436%) 13.779%;
+	--blurple-93: hsl(var(--blurple-93-hsl) / 1);
+	--blurple-93-hsl: 322.425 calc(var(--saturation-factor, 1) * 38.851%) 12.703%;
+	--blurple-94: hsl(var(--blurple-94-hsl) / 1);
+	--blurple-94-hsl: 322.848 calc(var(--saturation-factor, 1) * 39.342%) 11.626%;
+	--blurple-95: hsl(var(--blurple-95-hsl) / 1);
+	--blurple-95-hsl: 321.63 calc(var(--saturation-factor, 1) * 41.633%) 10.119%;
+	--blurple-96: hsl(var(--blurple-96-hsl) / 1);
+	--blurple-96-hsl: 321.575 calc(var(--saturation-factor, 1) * 42.271%) 8.827%;
+	--blurple-97: hsl(var(--blurple-97-hsl) / 1);
+	--blurple-97-hsl: 323.213 calc(var(--saturation-factor, 1) * 42.752%) 7.32%;
+	--blurple-98: hsl(var(--blurple-98-hsl) / 1);
+	--blurple-98-hsl: 324.427 calc(var(--saturation-factor, 1) * 42.489%) 5.382%;
+	--blurple-99: hsl(var(--blurple-99-hsl) / 1);
+	--blurple-99-hsl: 326.15 calc(var(--saturation-factor, 1) * 47.305%) 2.799%;
+	--blurple-100: hsl(var(--blurple-100-hsl) / 1);
+	--blurple-100-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 0%;
 	--test: rgb(255, 0, 255);
 	--min: rgb(249, 226, 175);
 	--max: rgb(166, 227, 161);
 	--close: rgb(243, 139, 168);
-	--accent-1: rgb(83, 201, 224);
-	--accent-2: rgb(54, 182, 207);
-	--accent-3: rgb(53, 156, 177);
-	--accent-4: rgb(50, 149, 168);
-	--accent-5: rgb(32, 119, 136);
 	--text-1: rgb(205, 214, 244);
 	--text-2: rgb(166, 173, 200);
 	--text-3: rgb(147, 153, 178);
 	--text-4: rgb(108, 112, 134);
 	--text-5: rgb(88, 91, 112);
-	--mention: rgba(89, 144, 175, 0.1);
-	--mention-hover: rgba(112, 200, 218, 0.05);
-	--hover: rgba(82, 88, 122, 0.1);
-	--active: rgba(82, 95, 122, 0.2);
-	--message-hover: rgba(0, 0, 0, 0.1);
+	--accent-1: rgb(83, 201, 224);
+	--accent-2: rgb(54, 182, 207);
+	--accent-3: rgb(53, 156, 177);
+	--accent-4: rgb(50, 149, 168);
+	--accent-5: rgb(32, 119, 136);
 	--roundness-xl: 16px;
 	--roundness-l: 12px;
 	--roundness-m: 10px;
 	--roundness-s: 8px;
 	--roundness-xs: 4px;
-	/* animations, can be disabled with reduced motion */
-	/* moon icon spin */
-	--moon-spin-transition: 0.4s ease;
-	/* top left icon, block to show, none to hide */
-	--default-icon: none;
+	--moon-spin-transition: 0.4s ease; /* moon icon spin, can be disabled with reduced motion */
+	--default-icon: none; /* top left icon, block to show, none to hide */
 	--moon-icon: block;
-	--moon-icon-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg');
+	--moon-icon-url: url('https://milkembers.github.io/nominal/assets/Font_Awesome_5_solid_moon.svg');
 	--moon-icon-size: auto;
-	/* top left text */
-	--corner-text: 'n o m i n a l';
-	/* font, default is 'gg sans' */
+	/* font, change to '' for default */
 	--font: 'figtree';
-	--font-primary:
-		var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	--font-display:
-		var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--code-font: 'fira code';
+	--font-primary: var(--font), 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-display: var(--font), 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-code: var(--code-font), 'gg mono', 'Source Code Pro', Consolas, Monaco, monospace;
 }
 
-/* reduced motion */
-:root.reduce-motion {
-	--moon-spin-transition: none;
-}
-
-html.theme-light,
+.theme-light,
 .theme-dark {
-	/* behind chat */
-	--background-primary: var(--bg-4);
-	/* channel list, user list, open folders */
-	--background-secondary: var(--bg-2);
-	/* sidebar user panel */
-	--background-secondary-alt: var(--bg-1);
-	/* top and left wraparound */
-	--background-tertiary: var(--bg-3);
-	--background-accent: var(--bg-2);
-	/* hover tooltips, uncustomized user popout */
-	--background-floating: var(--bg-1);
-	--background-mentioned: var(--mention);
-	--background-mentioned-hover: var(--mention-hover);
-	--background-message-highlight: var(--active);
-	--background-message-highlight-hover: var(--hover);
-	--background-message-hover: var(--message-hover);
-	/* divider lines */
-	--background-modifier-accent: var(--bg-2);
-	--background-modifier-active: var(--active);
-	--background-modifier-hover: var(--hover);
-	--background-modifier-selected: var(--active);
-	--brand-430: var(--accent-3);
-	/* accent-3 */
-	--brand-500: var(--brand-360);
-	/* accent-4 */
-	--brand-560: var(--brand-500);
-	--brand-600: var(--accent-5);
-	/* background of reacted reactions */
-	--brand-15a: var(--mention);
-	--channel-icon: var(--text-4);
-	--channel-text-area-placeholder: var(--text-5);
-	--channels-default: var(--text-4);
-	/* main text field */
-	--channeltextarea-background: var(--bg-2);
-	--control-brand-foreground: var(--accent-2);
-	--header-primary: var(--text-2);
-	--header-secondary: var(--text-4);
-	--home-background: var(--bg-4);
-	--input-background: var(--bg-3);
-	--input-placeholder-text: var(--text-5);
-	--interactive-active: var(--text-2);
-	--interactive-hover: var(--text-2);
-	--interactive-muted: var(--text-4);
-	--interactive-normal: var(--text-3);
-	--mention-background: var(--mention);
-	--mention-foreground: var(--accent-1);
-	--modal-background: var(--bg-3);
-	--modal-footer-background: var(--bg-4);
 	--text-brand: var(--accent-1);
 	--text-link: var(--accent-1);
-	--text-muted: var(--text-5);
-	--text-normal: var(--text-3);
 }
 
 /* moon */
-.wrapper_JJ-hgR[data-list-item-id='guildsnav___home']
-	> .childWrapper_JJ-hgR
-	> svg {
+:root.reduce-motion {
+	--moon-spin-transition: none;
+}
+[data-list-item-id='guildsnav___home'] svg {
 	display: none;
 }
-
-.wrapper_JJ-hgR[data-list-item-id='guildsnav___home']
-	> .childWrapper_JJ-hgR::before {
+[data-list-item-id='guildsnav___home']::before {
 	content: '';
 	display: var(--moon-icon);
 	position: absolute;
@@ -145,87 +258,107 @@ html.theme-light,
 	mask-repeat: no-repeat;
 	transition: background-color 0.15s ease-out;
 }
-
-.wrapper_JJ-hgR[data-list-item-id='guildsnav___home']:hover
-	> .childWrapper_JJ-hgR::before {
+[data-list-item-id='guildsnav___home']:hover::before {
 	transition:
 		background-color 0.15s ease-out,
 		transform var(--moon-spin-transition);
 	transform: rotate(0deg) scale(1);
 }
-
-.wrapper_JJ-hgR[data-list-item-id='guildsnav___home']:hover
-	> .childWrapper_JJ-hgR::before,
-.wrapper_JJ-hgR[data-list-item-id='guildsnav___home'].selected_JJ-hgR
-	> .childWrapper_JJ-hgR::before {
+[data-list-item-id='guildsnav___home']:hover::before,
+[data-list-item-id='guildsnav___home'][aria-selected='true']::before {
 	background: var(--text-1);
 	transform: rotate(-360deg) scale(0.8);
 }
-
-.wrapper_JJ-hgR[data-list-item-id='guildsnav___home']
-	.childWrapper_JJ-hgR::before {
+[data-list-item-id='guildsnav___home']::before {
 	transition:
 		background-color 0.15s ease-out,
 		transform var(--moon-spin-transition);
 }
-
-.wrapper_JJ-hgR[data-list-item-id='guildsnav___home'].selected_JJ-hgR
-	> .childWrapper_JJ-hgR {
+[data-list-item-id='guildsnav___home'][aria-selected='true'] {
 	background: var(--brand-360);
 }
 
-/* text selection */
+/* window controls */
+[class^='winButtons_'] {
+	gap: 20px;
+	margin-left: 24px;
+	padding-right: 12px;
+	align-items: center;
+}
+[class*='winButtonsWithDivider_']::before {
+	display: none;
+}
+[class^='winButton_'] {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: var(--text-5);
+	transition: background-color 0.15s ease;
+}
+[class^='winButton_'] > svg {
+	display: none;
+}
+[class^='winButton_']:nth-child(1):hover {
+	background-color: var(--min) !important;
+}
+[class^='winButton_']:nth-child(2):hover {
+	background-color: var(--max) !important;
+}
+[class^='winButton_']:nth-child(3):hover {
+	background-color: var(--close) !important;
+}
+
 ::selection {
-	background: var(--selection-col);
+	background: var(--accent-5);
 	color: var(--text-1);
 }
 
-/* toggle buttons i */
-div[class*='checked'] {
+/* toggle switch colour */
+[data-mana-component='switch']:has([style*='left: 24px']) {
 	background-color: var(--brand-500) !important;
+	transition: filter 0.15s ease;
+}
+[data-mana-component='switch']:has([style*='left: 24px']):hover {
+	background-color: var(--brand-500) !important;
+	filter: brightness(1.15);
 }
 
-/* toggle buttons ii */
-svg[class^='slider'] path {
-	fill: var(--brand-560);
+[class^='sidebar'] section[class^='panels'] /* sidebar nameplate */ {
+	border-radius: var(--roundness-l) !important;
 }
 
-/* symbols */
-[class^='autocomplete'] {
-	background: var(--bg-black);
+[class^='autocomplete_'] /* chat autocomplete popup */ {
+	background: color-mix(
+		in srgb,
+		var(--background-surface-higher) 40%,
+		transparent
+	);
+	backdrop-filter: blur(var(--roundness-xl));
 	border-radius: var(--roundness-s);
 }
 
-/* sidebar user panel */
-[class^='sidebar'] section[class^='panels'] {
-	border-radius: var(--roundness-l);
+/* right click menu */
+[class^='menu'],
+[class^='submenu'] {
+	background: color-mix(
+		in srgb,
+		var(--background-surface-higher) 20%,
+		transparent
+	);
+	border-radius: var(--roundness-m);
 }
 
-/* backdrop blur */
-[class^='backdrop'] + [class^='layer'] {
+[class^='backdrop'] + [class^='layer'] /* backdrop */ {
 	backdrop-filter: blur(var(--roundness-xs));
 }
 
-/* right click menu blur when backdrop is active */
-[class^='backdrop'] ~ [class*='layer'] > [class^='menu']::before {
+[class^='backdrop'] ~ [class*='layer'] > [class^='menu']::before /* right click menu when backdrop is active */ {
 	content: '';
 	position: absolute;
 	inset: 0;
 	z-index: 0;
 	backdrop-filter: blur(var(--roundness-xl));
 	border-radius: var(--roundness-m);
-}
-
-/* right click menu */
-[class^='menu'],
-[class^='submenu'] {
-	background: var(--bg-5);
-	border-radius: var(--roundness-m);
-}
-
-.menuItemLabel_nitlyF,
-.menuItemIcon_nitlyF {
-	background: var(--bg-clear);
 }
 
 /* message actions menu */
@@ -239,62 +372,40 @@ svg[class^='slider'] path {
 	border-radius: var(--roundness-m);
 }
 
-[class*='clickableSticker'] > div[aria-label]::after {
+[class*='clickableSticker'] > div[aria-label]::after /* welcome stickers pt 1 */ {
 	content: 'A sticker was hidden.';
 	color: var(--text-4);
 	font-weight: 500;
 }
 
-/* annoyances cleanup */
-/* less obnoxious super reactions */
-img.emoji {
-	opacity: 100;
+img.emoji /* less obnoxious super reactions pt 1 */ {
+	opacity: 1;
 }
-
-div[class*='shakeReaction'] {
+div[class*='shakeReaction'] /* less obnoxious super reactions pt 2 */ {
 	animation: none !important;
 }
 
-div[class^="effectsWrapper"],
-/* top help button */
-[href="https://support.discord.com"],
-/* top user profile button (unavailable) */
-[aria-label*="Show User Profile (Unavailable)"],
-/* tabs */
-[href="/store"],
-[href="/shop"],
-[href="/quest-home"],
-/* dm list & settings search bar */
-nav div[class^="searchBar"],
-/* welcome stickers */
-[class*="welcomeCTA"],
-[class*="clickableSticker"]>div[aria-label]>[class*="assetWrapper"],
-/* chat gift button */
-button[aria-label*="Send a gift"],
-/* chat gif button */
-button[aria-label*="Open GIF picker"],
-/* chat sticker button */
-button[aria-label*="Open sticker picker"],
-/* chat apps button */
-[class^="channelAppLauncher"],
-/* activity button, call */
-[class*="buttonContainer_9bvEB0"],
-/* activity button, sidebar */
-button[aria-label*="Start An Activity"],
-/* "new" dot on activity button */
-[class*="dot_oXifRZ maskSecondary_oXifRZ"],
-/* "new" dot on activity button 2 electric boogaloo */
-[class*="dot_oXifRZ maskBlack_oXifRZ"],
-/* server discovery */
-div[class*="listItem"]:has(div[aria-label="Discover"]),
-/* paid avatar crap, & in messages
-svg[class^="avatarDecoration"],
-img[class^="avatarDecoration"],
-/* paid profile crap
-[class^="profileEffects"],
-/* paid banner, needs fix: [class*="bannerSVGWrapper"] > mask > image, */
-/* settings merch button */s
-div[aria-label="Merch"],/* settings social buttons */
-[class^="socialLinks"] {
+/* cosmetics, broken: svg[class^='avatarDecoration'],img[class^='avatarDecoration'],[class^='profileEffects'],[class*='bannerSVGWrapper'] > mask > image, */
+div[class^='effectsWrapper'] /* less obnoxious super reactions pt 3 */,
+div[class^='trailing'] > a[href*='support.discord.com'] /* top help button */,
+[aria-label*='Show User Profile (Unavailable)'] /* top user profile button (unavailable) */,
+li:has(> div > [href='/store']),
+li:has(> div > [href='/shop']),
+div:has(> li > div > [href='/quest-home']),
+[class*='container_ZTJWQo'] /* entire idiotic quest container for a blank startup */,
+/* header ad [class*='heroWrapper_ZTJWQo'], */
+/* footer ad [class*='footer_snIQ1H'], */
+[class*='headerCopy_vVEhpw'] /* quest card text */,
+[class*='ctas_vVEhpw'] /* quest accept button */,
+[class*='welcomeCTA'] /* welcome stickers pt 2, prompt */,
+[class*='clickableSticker'] > div[aria-label] > [class*='assetWrapper'] /* welcome stickers pt 3, except bird for some reason */,
+div[class^='channelBottomBarArea'] div:has(> div[aria-label*='Send a gift']),
+div[class^='channelBottomBarArea'] div:has(> div[aria-label*='Open GIF picker']),
+div[class^='channelBottomBarArea'] div:has(> div[aria-label*='Open sticker picker']),
+div[aria-label*='Apps'] /* apps button, chat */,
+[class*='buttonContainer_9bvEB0'] /* apps button, call */,
+[class*='dot_oXifRZ maskSecondary_oXifRZ'] /* 'new' dot on apps button */,
+[class*='dot_oXifRZ maskBlack_oXifRZ'] /* 'new' dot on apps button 2 electric boogaloo */,
+div[class*='listItem']:has(div[aria-label='Discover']) /* server discovery button */ {
 	display: none;
 }
