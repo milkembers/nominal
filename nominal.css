@@ -323,9 +323,14 @@
 	filter: brightness(1.15);
 }
 
-[class^='sidebar'] section[class^='panels'] /* sidebar nameplate */ {
+/* sidebar nameplate */
+[class^='sidebar'] section[class^='panels'] {
 	border-radius: var(--roundness-l) !important;
 }
+[class^='sidebar'] section[class^='panels'] > div {
+	border-radius: var(--roundness-l) !important;
+}
+
 
 [class^='autocomplete_'] /* chat autocomplete popup */ {
 	background: color-mix(
